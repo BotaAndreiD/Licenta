@@ -1,0 +1,21 @@
+import wfdb
+import numpy as np
+import os
+
+base_path = "/home/andrei/Documents/Licenta"
+record_name = "19830"
+scale_factor = 1000
+
+record_path = os.path.join(base_path, record_name)
+record = wfdb.rdrecord(record_path)
+
+signal_raw = record.p_signal[:, 0]
+signal = signal_raw / scale_factor 
+fs = record.fs
+
+time = np.arange(len(signal)) / fs
+
+data = np.column_stack((time, signal))
+
+output_file = os.path.join(base_path, "ekg_signal.txt")
+np.savetxt(output_file, data, fmt="%.6f", header="Time(s)\tAmplitude(V)")
