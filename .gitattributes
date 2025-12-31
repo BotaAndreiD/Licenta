@@ -1,1 +1,2 @@
 AchizitionareSemnal/ekg_signal.txt filter=lfs diff=lfs merge=lfs -text
+AchizitionareSemnal/ekg_signal2.txt filter=lfs diff=lfs merge=lfs -text

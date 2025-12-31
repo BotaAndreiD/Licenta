@@ -1,0 +1,143 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\users\andrei\Documents\Licenta\SimulariLtspice\RLD\Draft3.net
+Start Time: Tue Dec 30 11:33:23 2025
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Instance "u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m15": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+vernier = 0.5
+vernier = 0.25
+Gmin = 5.97037e-07
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 67.8267%
+Source Step = 67.9451%
+Source Step = 68.0634%
+Source Step = 68.1818%
+Source Step = 68.3002%
+vernier = 0.00585938
+Source Step = 68.4245%
+Source Step = 68.602%
+Source Step = 68.7796%
+Source Step = 68.9571%
+Source Step = 69.1347%
+Source Step = 69.3123%
+vernier = 0.00878906
+Source Step = 69.5786%
+Source Step = 69.8449%
+Source Step = 70.1113%
+Source Step = 70.3776%
+Source Step = 70.6439%
+vernier = 0.0131836
+Source Step = 71.0301%
+Source Step = 71.4296%
+Source Step = 71.8291%
+Source Step = 72.0089%
+Source Step = 72.1088%
+Source Step = 72.2087%
+Source Step = 72.3085%
+Source Step = 72.4084%
+vernier = 0.00494385
+Source Step = 72.5233%
+Source Step = 72.6731%
+Source Step = 72.8229%
+Source Step = 72.9727%
+Source Step = 73.1225%
+vernier = 0.00741577
+Source Step = 73.2873%
+Source Step = 73.512%
+Source Step = 73.7368%
+Source Step = 73.9615%
+Source Step = 74.1862%
+vernier = 0.0111237
+Source Step = 74.4222%
+Source Step = 74.7592%
+Source Step = 75.0963%
+Source Step = 75.4334%
+Source Step = 75.7705%
+Source Step = 76.1076%
+vernier = 0.0166855
+Source Step = 76.6132%
+Source Step = 77.1188%
+Source Step = 77.6244%
+Source Step = 78.13%
+Source Step = 78.6357%
+vernier = 0.0250282
+Source Step = 79.3688%
+Source Step = 80.1272%
+Source Step = 80.8857%
+Source Step = 81.6441%
+Source Step = 82.4025%
+vernier = 0.0375423
+Source Step = 83.4643%
+Source Step = 84.602%
+Source Step = 85.7396%
+Source Step = 86.8773%
+Source Step = 88.0149%
+vernier = 0.0563135
+Source Step = 89.5507%
+Source Step = 91.2572%
+Source Step = 92.9637%
+Source Step = 94.6702%
+Source Step = 96.3766%
+vernier = 0.0844703
+Source Step = 98.595%
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 44.519 seconds.
+
+Files loaded:
+C:\users\andrei\Documents\Licenta\SimulariLtspice\RLD\Draft3.net
+C:\users\andrei\Documents\Licenta\SimulariLtspice\RLD\ad8534.cir
+C:\users\andrei\AppData\Local\LTspice\lib\sub\MAX41400.sub
+
