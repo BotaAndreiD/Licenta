@@ -1,17 +1,11 @@
 LTspice 24.1.10 for Windows
 Circuit: C:\users\andrei\Documents\Licenta\SimulariLtspice\Ina+Integrator\Draft1.net
-Start Time: Thu Dec 25 12:09:18 2025
+Start Time: Sat Jan  3 20:50:48 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
 temp = 27
 method = trap
-Instance "u1:m1": Length shorter than recommended for a level 1 MOSFET.
-Instance "u1:m2": Length shorter than recommended for a level 1 MOSFET.
-Instance "u1:m16": Length shorter than recommended for a level 1 MOSFET.
-Instance "u1:m3": Length shorter than recommended for a level 1 MOSFET.
-Instance "u1:m4": Length shorter than recommended for a level 1 MOSFET.
-Instance "u1:m15": Length shorter than recommended for a level 1 MOSFET.
 Instance "u3:m1": Length shorter than recommended for a level 1 MOSFET.
 Instance "u3:m2": Length shorter than recommended for a level 1 MOSFET.
 Instance "u3:m16": Length shorter than recommended for a level 1 MOSFET.
@@ -29,16 +23,96 @@ Gmin = 0.000142725
 Gmin = 1.5325e-05
 Gmin = 1.6455e-06
 Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 1.41348e-07
+vernier = 0.00195312
+vernier = 0.000976562
+vernier = 0.000488281
 Gmin = 0
-Gmin stepping succeeded in finding the operating point.
+Gmin stepping failed
 
-Total elapsed time: 42.667 seconds.
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 72.7332%
+Source Step = 72.7628%
+Source Step = 72.7924%
+Source Step = 72.822%
+Source Step = 72.8516%
+Source Step = 72.8812%
+vernier = 0.00146484
+Source Step = 72.9241%
+Source Step = 72.9685%
+Source Step = 73.0128%
+Source Step = 73.0572%
+Source Step = 73.1016%
+vernier = 0.00219727
+Source Step = 73.1638%
+Source Step = 73.2304%
+Source Step = 73.2969%
+Source Step = 73.3635%
+Source Step = 73.4301%
+vernier = 0.0032959
+Source Step = 73.52%
+Source Step = 73.6199%
+Source Step = 73.7197%
+Source Step = 73.8196%
+Source Step = 73.9195%
+vernier = 0.00494385
+Source Step = 74.0493%
+Source Step = 74.1991%
+Source Step = 74.349%
+Source Step = 74.4988%
+Source Step = 74.6486%
+vernier = 0.00741577
+Source Step = 74.8359%
+Source Step = 75.0606%
+Source Step = 75.2853%
+Source Step = 75.51%
+Source Step = 75.7347%
+vernier = 0.0111237
+Source Step = 76.0044%
+Source Step = 76.3415%
+Source Step = 76.6786%
+Source Step = 77.0156%
+Source Step = 77.3527%
+vernier = 0.0166855
+Source Step = 77.7404%
+Source Step = 78.246%
+Source Step = 78.7516%
+Source Step = 79.2572%
+Source Step = 79.7628%
+vernier = 0.0250282
+Source Step = 80.319%
+Source Step = 81.0775%
+Source Step = 81.8359%
+Source Step = 82.5943%
+Source Step = 83.3528%
+vernier = 0.0375423
+Source Step = 84.1491%
+Source Step = 85.2868%
+Source Step = 86.4244%
+Source Step = 87.562%
+Source Step = 88.6997%
+Source Step = 89.8373%
+vernier = 0.0563135
+Source Step = 91.5438%
+Source Step = 93.2503%
+Source Step = 94.9568%
+Source Step = 96.6632%
+Source Step = 98.3697%
+vernier = 0.0844703
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 42.435 seconds.
 
 Files loaded:
 C:\users\andrei\Documents\Licenta\SimulariLtspice\Ina+Integrator\Draft1.net
