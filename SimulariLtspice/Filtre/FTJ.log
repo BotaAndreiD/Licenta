@@ -1,6 +1,6 @@
-LTspice 24.1.10 for Windows
-Circuit: C:\users\andrei\Documents\Licenta\SimulariLtspice\Filtre\FTJ.net
-Start Time: Sun Jan  4 21:40:01 2026
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\FTJ.net
+Start Time: Wed Feb 25 10:14:41 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -18,41 +18,13 @@ Instance "u4:m16": Length shorter than recommended for a level 1 MOSFET.
 Instance "u4:m3": Length shorter than recommended for a level 1 MOSFET.
 Instance "u4:m4": Length shorter than recommended for a level 1 MOSFET.
 Instance "u4:m15": Length shorter than recommended for a level 1 MOSFET.
-Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-vernier = 0.5
-vernier = 0.25
-vernier = 0.125
-vernier = 0.0625
-vernier = 0.03125
-vernier = 0.015625
-vernier = 0.0078125
-Gmin = 1.3164e-06
-vernier = 0.00390625
-vernier = 0.00195312
-vernier = 0.000976562
-vernier = 0.000488281
-Gmin = 0
-Gmin stepping failed
+Gmin stepping succeeded in finding the operating point.
 
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
-
-Total elapsed time: 0.142 seconds.
+Total elapsed time: 0.065 seconds.
 
 Files loaded:
-C:\users\andrei\Documents\Licenta\SimulariLtspice\Filtre\FTJ.net
-C:\users\andrei\Documents\Licenta\SimulariLtspice\Filtre\ad8534.cir
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\FTJ.net
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\ad8534.cir
 
