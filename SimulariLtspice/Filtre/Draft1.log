@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\Draft1.net
-Start Time: Thu Feb 26 11:59:20 2026
+Start Time: Mon Mar  9 19:52:07 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -12,19 +12,57 @@ Instance "u1:m16": Length shorter than recommended for a level 1 MOSFET.
 Instance "u1:m3": Length shorter than recommended for a level 1 MOSFET.
 Instance "u1:m4": Length shorter than recommended for a level 1 MOSFET.
 Instance "u1:m15": Length shorter than recommended for a level 1 MOSFET.
-Instance "u2:m1": Length shorter than recommended for a level 1 MOSFET.
-Instance "u2:m2": Length shorter than recommended for a level 1 MOSFET.
-Instance "u2:m16": Length shorter than recommended for a level 1 MOSFET.
-Instance "u2:m3": Length shorter than recommended for a level 1 MOSFET.
-Instance "u2:m4": Length shorter than recommended for a level 1 MOSFET.
-Instance "u2:m15": Length shorter than recommended for a level 1 MOSFET.
-Direct Newton iteration failed to find operating point.
-Starting Gmin stepping
-Gmin stepping succeeded in finding the operating point.
-
-Total elapsed time: 0.053 seconds.
+Instance "u5:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m15": Length shorter than recommended for a level 1 MOSFET.
+Per .tran options, skipping operating point for transient analysis.
+Changing Tseed to 1e-08
+Changing Tseed to 1e-10
+Total elapsed time: 97.442 seconds.
 
 Files loaded:
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\Draft1.net
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\ad8534.cir
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\BZX84C3V3.spice.txt
+C:\Users\botaa\AppData\Local\LTspice\lib\sub\ADI1.lib
+C:\Users\botaa\AppData\Local\LTspice\lib\sub\ADP151-x.x.sub
 
