@@ -2,24 +2,33 @@ import wfdb
 import numpy as np
 import os
 
-# Verifică dacă fișierele sunt direct în AchizitionareSemnal sau în subfolderele physionet.org
-base_path = r"C:\Users\botaa\Documents\Licenta\Licenta\AchizitionareSemnal"
-# Am modificat din 19093 in 19830 conform fisierelor tale din folder
+
+base_path = "/home/andrei/Licenta/AchizitionareSemnal"
 record_name = "19830" 
+
 scale_factor = 1000
 
+
 record_path = os.path.join(base_path, record_name)
-record = wfdb.rdrecord(record_path)
 
-signal_raw = record.p_signal[:, 0]
-signal = signal_raw / scale_factor 
-fs = record.fs
+try:
+    record = wfdb.rdrecord(record_path)
+    
+    
+    signal_raw = record.p_signal[:, 0]
+    
+    
+    signal = signal_raw / scale_factor 
+    
+    fs = record.fs
+    time = np.arange(len(signal)) / fs
+    data = np.column_stack((time, signal))
 
-time = np.arange(len(signal)) / fs
+    output_file = os.path.join(base_path, "ekg_signal2.txt")
+  
+    np.savetxt(output_file, data, fmt="%.6f", delimiter="\t", header="Time(s)\tAmplitude(V)")
 
-data = np.column_stack((time, signal))
+    print(f"Procesare finalizata! Fisierul a fost salvat cu scale_factor {scale_factor}.")
 
-output_file = os.path.join(base_path, "ekg_signal2.txt")
-np.savetxt(output_file, data, fmt="%.6f", header="Time(s)\tAmplitude(V)")
-
-print("Procesare finalizata cu succes!")
+except Exception as e:
+    print(f"Eroare: {e}")

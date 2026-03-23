@@ -1,8 +1,8 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\FTS.net
-Start Time: Mon Mar  9 18:57:08 2026
+Circuit: \\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Filtre\FTS.net
+Start Time: Sun Mar 22 15:02:19 2026
 solver = Normal
-Maximum thread count: 12
+Maximum thread count: 20
 tnom = 27
 temp = 27
 method = trap
@@ -22,9 +22,9 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.056 seconds.
+Total elapsed time: 0.244 seconds.
 
 Files loaded:
-C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\FTS.net
-C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\ad8534.cir
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Filtre\FTS.net
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Filtre\ad8534.cir
 
