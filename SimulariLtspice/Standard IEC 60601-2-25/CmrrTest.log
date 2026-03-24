@@ -1,0 +1,60 @@
+LTspice 26.0.1 for Windows
+Circuit: \\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Standard IEC 60601-2-25\CmrrTest.net
+Start Time: Mon Mar 23 16:49:25 2026
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Instance "u5:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u3:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u4:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u6:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u5:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u7:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u8:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u9:m15": Length shorter than recommended for a level 1 MOSFET.
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 78.772 seconds.
+
+Files loaded:
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Standard IEC 60601-2-25\CmrrTest.net
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Standard IEC 60601-2-25\ad8534.cir
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Standard IEC 60601-2-25\BZX84C3V3.spice.txt
+C:\Users\Andrei\AppData\Local\LTspice\lib\sub\ADP151-x.x.sub
+C:\Users\Andrei\AppData\Local\LTspice\lib\sub\MAX41400.sub
+

@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: \\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Standard IEC 60601-2-25\EkgIdealFinal.net
-Start Time: Sun Mar 22 09:07:57 2026
+Start Time: Mon Mar 23 19:40:46 2026
 solver = Normal
 Maximum thread count: 20
 tnom = 27
@@ -54,14 +54,8 @@ Instance "u9:m16": Length shorter than recommended for a level 1 MOSFET.
 Instance "u9:m3": Length shorter than recommended for a level 1 MOSFET.
 Instance "u9:m4": Length shorter than recommended for a level 1 MOSFET.
 Instance "u9:m15": Length shorter than recommended for a level 1 MOSFET.
-Instance "u11:m1": Length shorter than recommended for a level 1 MOSFET.
-Instance "u11:m2": Length shorter than recommended for a level 1 MOSFET.
-Instance "u11:m16": Length shorter than recommended for a level 1 MOSFET.
-Instance "u11:m3": Length shorter than recommended for a level 1 MOSFET.
-Instance "u11:m4": Length shorter than recommended for a level 1 MOSFET.
-Instance "u11:m15": Length shorter than recommended for a level 1 MOSFET.
 Per .tran options, skipping operating point for transient analysis.
-Total elapsed time: 30.022 seconds.
+Total elapsed time: 74.263 seconds.
 
 Files loaded:
 \\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Standard IEC 60601-2-25\EkgIdealFinal.net
