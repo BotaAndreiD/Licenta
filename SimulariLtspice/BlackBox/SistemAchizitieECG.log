@@ -1,0 +1,66 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\BlackBox\SistemAchizitieECG.net
+Start Time: Tue Mar 24 18:30:32 2026
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Instance "x4:u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x4:u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x5:u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x6:u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x2:u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x2:u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x2:u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x2:u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x2:u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x2:u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "x7:u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "x7:u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "x7:u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "x7:u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "x7:u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "x7:u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 24.276 seconds.
+
+Files loaded:
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\BlackBox\SistemAchizitieECG.net
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\BlackBox\ad8534.cir
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\BlackBox\BZX84C3V3.spice.txt
+C:\Users\botaa\AppData\Local\LTspice\lib\sub\ADP151-x.x.sub
+C:\Users\botaa\AppData\Local\LTspice\lib\sub\MAX41400.sub
+
