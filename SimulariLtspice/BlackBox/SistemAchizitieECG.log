@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\BlackBox\SistemAchizitieECG.net
-Start Time: Tue Mar 24 18:30:32 2026
+Start Time: Wed Apr  1 09:39:27 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -55,7 +55,7 @@ Instance "x7:u2:m3": Length shorter than recommended for a level 1 MOSFET.
 Instance "x7:u2:m4": Length shorter than recommended for a level 1 MOSFET.
 Instance "x7:u2:m15": Length shorter than recommended for a level 1 MOSFET.
 Per .tran options, skipping operating point for transient analysis.
-Total elapsed time: 24.276 seconds.
+Total elapsed time: 24.705 seconds.
 
 Files loaded:
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\BlackBox\SistemAchizitieECG.net
