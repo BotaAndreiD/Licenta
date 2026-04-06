@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/Librarii/Footprints/footprints.pretty")(options "")(descr ""))
+  (lib (name "ADlogo")(type "KiCad")(uri "${KIPRJMOD}/Librarii/Footprints/footprints.pretty/ADlogo.pretty")(options "")(descr ""))
+)
