@@ -3035,8 +3035,8 @@
 		(uuid b078107d-68a0-48b5-b49d-c956db8569d5)
 	)
 	(rectangle
-		(start 256.667 156.718)
-		(end 306.832 160.528)
+		(start 254.127 156.718)
+		(end 304.292 160.528)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3197,7 +3197,7 @@
 	)
 	(text "Ordin 4, frecvență de tăiere la 150Hz, -40 dB."
 		(exclude_from_sim no)
-		(at 257.048 158.75 0)
+		(at 255.016 159.004 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5313,16 +5313,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 130.81) (xy 59.69 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b813f14b-37a0-4f57-b6df-8f6a4f98a7bf")
-	)
-	(wire
-		(pts
 			(xy 275.59 87.63) (xy 284.48 87.63)
 		)
 		(stroke
@@ -5440,6 +5430,16 @@
 			(type default)
 		)
 		(uuid "bdce9445-5e62-45d6-aadc-af0a1404038e")
+	)
+	(wire
+		(pts
+			(xy 59.69 132.08) (xy 59.69 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d8d44f-db9f-451b-ad5b-8b6c3396fb62")
 	)
 	(wire
 		(pts
@@ -5720,6 +5720,16 @@
 			(type default)
 		)
 		(uuid "db704dfd-9527-48ac-9176-7a625a5606f5")
+	)
+	(wire
+		(pts
+			(xy 59.69 123.19) (xy 59.69 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db982149-406f-49c2-8581-e3a224d36b88")
 	)
 	(wire
 		(pts
@@ -7227,7 +7237,7 @@
 	)
 	(global_label "RL"
 		(shape input)
-		(at 59.69 130.81 270)
+		(at 59.69 132.08 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7237,7 +7247,7 @@
 		)
 		(uuid "ca0994e0-ce2f-459c-b0c2-b8cc3bc46220")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.69 136.0933 90)
+			(at 59.69 137.3633 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8500,6 +8510,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 223.52 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d6b77c7a-c755-4989-8c1c-e3fd6e6efd5b")
 		)
@@ -8742,6 +8761,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff3b53f4-eed0-45de-8d11-23f8a08afdf6")
 		)
@@ -8872,6 +8900,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 171.45 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b3cbc4a-f6f9-4045-b7b7-7ecb399d1ff8")
 		)
@@ -8928,6 +8965,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 308.61 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 308.61 153.67 0)
 			(effects
 				(font
@@ -9192,6 +9238,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 204.47 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f4544524-b4eb-463a-9941-063055ff83d0")
 		)
@@ -9333,6 +9388,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 318.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 318.77 99.06 0)
 			(effects
 				(font
@@ -9868,6 +9932,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 115.57 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10503,7 +10576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/erjpb3b1001v/res-1k-0-1-0-2w-0603-thick-film/dp/3308229"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr06x1001ftl/res-1k-1-0-1w-0603-thick-film/dp/2447272"
 			(at 207.01 119.38 0)
 			(effects
 				(font
@@ -10897,7 +10970,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 59.69 125.73 180)
+		(at 59.69 127 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10905,7 +10978,7 @@
 		(dnp no)
 		(uuid "7c632bae-cdf8-41d5-a77c-1c591e3c2e82")
 		(property "Reference" "R10"
-			(at 62.738 125.73 0)
+			(at 62.738 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10913,7 +10986,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 62.992 127.508 0)
+			(at 62.992 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10921,7 +10994,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 61.468 125.73 90)
+			(at 61.468 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10930,7 +11003,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 125.73 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10939,7 +11012,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 59.69 125.73 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10948,7 +11021,7 @@
 			)
 		)
 		(property "Field5" "https://ro.farnell.com/yageo/re0603dr-071ml/res-1m-0-5-0-1w-0603-thick-film/dp/1840601"
-			(at 59.69 125.73 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10957,7 +11030,7 @@
 			)
 		)
 		(property "Field6" ""
-			(at 59.69 125.73 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11024,6 +11097,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 142.24 96.52 0)
 			(effects
 				(font
@@ -11154,6 +11236,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
 			(at 222.25 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 222.25 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11458,6 +11549,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 316.23 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 316.23 144.78 0)
 			(effects
 				(font
@@ -11779,6 +11879,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 90.17 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 90.17 30.48 0)
 			(effects
 				(font
@@ -12306,7 +12415,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200n"
+		(property "Value" "220n"
 			(at 201.422 112.268 0)
 			(effects
 				(font
@@ -12342,7 +12451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b224ko8nnnc/cap-mlcc-0-22uf-16vdc-x7r-0603/dp/4690161"
+		(property "Field5" "https://ro.farnell.com/yageo/cc0603kpx7r8bb224/cap-0-22uf-25v-mlcc-0603/dp/3764505"
 			(at 194.31 109.22 0)
 			(effects
 				(font
@@ -12590,7 +12699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwf06r6811btl/res-6k81-0-1-0-1w-0603-thin-film/dp/2337278"
+		(property "Field5" "https://ro.farnell.com/yageo/rt0603brd076k81l/res-6k81-0-1-0-1w-0603-thin-film/dp/3496662"
 			(at 262.89 130.81 0)
 			(effects
 				(font
@@ -13273,7 +13382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c104k3ractu/cap-0-1-f-25v-10-x7r-0603/dp/1650835"
+		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b104kb8nnnc/capacitor-mlcc-0-1uf-x7r-50v-0603/dp/4539043"
 			(at 182.88 104.14 90)
 			(effects
 				(font
@@ -13997,6 +14106,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 311.15 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f581bdfc-a4ae-486d-8e87-2d6a8c8938b7")
 		)
@@ -14056,6 +14174,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 158.75 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 158.75 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14205,6 +14332,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
 			(at 182.88 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 182.88 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14369,7 +14505,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c104k3ractu/cap-0-1-f-25v-10-x7r-0603/dp/1650835"
+		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b104kb8nnnc/capacitor-mlcc-0-1uf-x7r-50v-0603/dp/4539043"
 			(at 199.39 104.14 90)
 			(effects
 				(font
@@ -14446,6 +14582,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 144.78 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 144.78 124.46 0)
 			(effects
 				(font
@@ -14605,7 +14750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c104k3ractu/cap-0-1-f-25v-10-x7r-0603/dp/1650835"
+		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b104kb8nnnc/capacitor-mlcc-0-1uf-x7r-50v-0603/dp/4539043"
 			(at 257.81 44.45 0)
 			(effects
 				(font
@@ -14843,6 +14988,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 41.91 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a486ca59-3d6a-45e0-a9c1-f9db7148a62b")
 		)
@@ -14899,6 +15053,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 234.95 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
 			(at 234.95 48.26 0)
 			(effects
 				(font
@@ -15709,6 +15872,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 309.88 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "72d7167f-04c2-4078-9399-7f9b19a015ac")
 		)
@@ -15837,6 +16009,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
 			(at 134.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+			(at 134.62 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
