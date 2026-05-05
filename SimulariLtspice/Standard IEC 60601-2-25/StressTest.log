@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Standard IEC 60601-2-25\StressTest.net
-Start Time: Wed Apr  1 10:56:17 2026
+Start Time: Tue May  5 14:03:23 2026
 
 .step run=1
 solver = Normal
@@ -56,16 +56,15 @@ Instance "u5:m16": Length shorter than recommended for a level 1 MOSFET.
 Instance "u5:m3": Length shorter than recommended for a level 1 MOSFET.
 Instance "u5:m4": Length shorter than recommended for a level 1 MOSFET.
 Instance "u5:m15": Length shorter than recommended for a level 1 MOSFET.
-Per .tran options, skipping operating point for transient analysis.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Trouble finding operating point....skipping operating point for Transient analysis.
 
-.step run=2
-
-.step run=3
-
-.step run=4
-
-.step run=5
-Total elapsed time: 152.924 seconds.
+Simulation stopped by user.
+Total elapsed time: 53.377 seconds.
 
 Files loaded:
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Standard IEC 60601-2-25\StressTest.net
