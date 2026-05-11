@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Standard IEC 60601-2-25\EkgTolerante.net
-Start Time: Mon Apr  6 16:14:17 2026
+Start Time: Tue May  5 14:42:17 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -55,7 +55,7 @@ Instance "u5:m3": Length shorter than recommended for a level 1 MOSFET.
 Instance "u5:m4": Length shorter than recommended for a level 1 MOSFET.
 Instance "u5:m15": Length shorter than recommended for a level 1 MOSFET.
 Per .tran options, skipping operating point for transient analysis.
-Total elapsed time: 28.538 seconds.
+Total elapsed time: 28.035 seconds.
 
 Files loaded:
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Standard IEC 60601-2-25\EkgTolerante.net

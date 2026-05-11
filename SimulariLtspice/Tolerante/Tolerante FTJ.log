@@ -1,0 +1,504 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\Tolerante FTJ.net
+Start Time: Tue May  5 13:59:57 2026
+
+.step run=1
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Instance "u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=2
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=3
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=4
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=5
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=6
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=7
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=8
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=9
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=10
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=11
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=12
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=13
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=14
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=15
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=16
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=17
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=18
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=19
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=20
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=21
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=22
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=23
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=24
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=25
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=26
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=27
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=28
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=29
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=30
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=31
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=32
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=33
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=34
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=35
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=36
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=37
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=38
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=39
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=40
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=41
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=42
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=43
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=44
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=45
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step run=46
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=47
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=48
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=49
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=50
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 2.817 seconds.
+
+Files loaded:
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\Tolerante FTJ.net
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\ad8534.cir
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\BZX84C3V3.spice.txt
+
+
+Measurement: gain_pass
+  step	mag(V(vekg)) 	at
+     1	(14.0493280615dB,0°)	10
+     2	(14.0399615617dB,0°)	10
+     3	(14.0078406598dB,0°)	10
+     4	(14.0558297926dB,0°)	10
+     5	(14.0545463246dB,0°)	10
+     6	(14.0788864787dB,0°)	10
+     7	(14.0748206923dB,0°)	10
+     8	(14.0025001123dB,0°)	10
+     9	(14.0891305388dB,0°)	10
+    10	(14.01893305dB,0°)	10
+    11	(14.0693948584dB,0°)	10
+    12	(14.039950495dB,0°)	10
+    13	(14.0750529648dB,0°)	10
+    14	(14.0490060171dB,0°)	10
+    15	(14.0837410016dB,0°)	10
+    16	(14.0563649583dB,0°)	10
+    17	(14.0491336602dB,0°)	10
+    18	(14.0129996442dB,0°)	10
+    19	(14.0361736125dB,0°)	10
+    20	(14.0129205722dB,0°)	10
+    21	(14.0169169236dB,0°)	10
+    22	(14.0527460082dB,0°)	10
+    23	(14.0611399705dB,0°)	10
+    24	(14.0629986583dB,0°)	10
+    25	(14.0875628785dB,0°)	10
+    26	(14.0371692172dB,0°)	10
+    27	(14.0274232472dB,0°)	10
+    28	(14.0258555506dB,0°)	10
+    29	(14.0251917074dB,0°)	10
+    30	(14.0613625504dB,0°)	10
+    31	(14.050423599dB,0°)	10
+    32	(14.0566940913dB,0°)	10
+    33	(14.0702917851dB,0°)	10
+    34	(14.0274119306dB,0°)	10
+    35	(14.0314313147dB,0°)	10
+    36	(14.0490159936dB,0°)	10
+    37	(14.0528339135dB,0°)	10
+    38	(14.0647125216dB,0°)	10
+    39	(14.032829042dB,0°)	10
+    40	(14.0546452156dB,0°)	10
+    41	(14.0650249886dB,0°)	10
+    42	(14.0080591348dB,0°)	10
+    43	(14.0432285019dB,0°)	10
+    44	(14.0436426238dB,0°)	10
+    45	(14.0563694114dB,0°)	10
+    46	(14.0139895589dB,0°)	10
+    47	(14.0778074504dB,0°)	10
+    48	(14.0609099287dB,0°)	10
+    49	(14.0580343345dB,0°)	10
+    50	(14.0315620276dB,0°)	10
+
+Measurement: target_3db
+  step	gain_pass/1.414
+     1	(11.0403398723dB,0°)
+     2	(11.0309733725dB,0°)
+     3	(10.9988524706dB,0°)
+     4	(11.0468416033dB,0°)
+     5	(11.0455581354dB,0°)
+     6	(11.0698982894dB,0°)
+     7	(11.0658325031dB,0°)
+     8	(10.9935119231dB,0°)
+     9	(11.0801423495dB,0°)
+    10	(11.0099448608dB,0°)
+    11	(11.0604066692dB,0°)
+    12	(11.0309623057dB,0°)
+    13	(11.0660647756dB,0°)
+    14	(11.0400178279dB,0°)
+    15	(11.0747528124dB,0°)
+    16	(11.0473767691dB,0°)
+    17	(11.040145471dB,0°)
+    18	(11.004011455dB,0°)
+    19	(11.0271854233dB,0°)
+    20	(11.003932383dB,0°)
+    21	(11.0079287344dB,0°)
+    22	(11.0437578189dB,0°)
+    23	(11.0521517813dB,0°)
+    24	(11.054010469dB,0°)
+    25	(11.0785746892dB,0°)
+    26	(11.028181028dB,0°)
+    27	(11.018435058dB,0°)
+    28	(11.0168673614dB,0°)
+    29	(11.0162035182dB,0°)
+    30	(11.0523743612dB,0°)
+    31	(11.0414354098dB,0°)
+    32	(11.0477059021dB,0°)
+    33	(11.0613035959dB,0°)
+    34	(11.0184237413dB,0°)
+    35	(11.0224431254dB,0°)
+    36	(11.0400278044dB,0°)
+    37	(11.0438457243dB,0°)
+    38	(11.0557243324dB,0°)
+    39	(11.0238408527dB,0°)
+    40	(11.0456570264dB,0°)
+    41	(11.0560367994dB,0°)
+    42	(10.9990709456dB,0°)
+    43	(11.0342403127dB,0°)
+    44	(11.0346544345dB,0°)
+    45	(11.0473812222dB,0°)
+    46	(11.0050013697dB,0°)
+    47	(11.0688192612dB,0°)
+    48	(11.0519217395dB,0°)
+    49	(11.0490461453dB,0°)
+    50	(11.0225738384dB,0°)
+
+Measurement: f_cutoff
+  step	mag(V(vekg))=target_3dB 
+     1	157.775389291
+     2	146.296149523
+     3	133.179447027
+     4	142.458293429
+     5	157.877782703
+     6	175.694892405
+     7	155.273721975
+     8	112.416519097
+     9	177.752018488
+    10	128.547177597
+    11	153.325958165
+    12	127.454828423
+    13	174.684509933
+    14	168.910089916
+    15	177.638310465
+    16	138.198894968
+    17	160.019714989
+    18	135.890740322
+    19	159.76378116
+    20	135.617214525
+    21	155.007219949
+    22	148.956504037
+    23	168.723825601
+    24	142.486308429
+    25	174.944363316
+    26	128.906454543
+    27	133.23936686
+    28	128.364822063
+    29	112.224082637
+    30	166.364872606
+    31	168.470327407
+    32	136.182269108
+    33	169.963289047
+    34	148.610010963
+    35	130.777454503
+    36	166.413969526
+    37	146.725728481
+    38	172.136953169
+    39	127.356981005
+    40	157.859745751
+    41	172.267978228
+    42	136.141167377
+    43	142.232798717
+    44	166.355498292
+    45	136.00950945
+    46	128.662460654
+    47	170.129053914
+    48	142.322499047
+    49	146.942844658
+    50	128.666419627

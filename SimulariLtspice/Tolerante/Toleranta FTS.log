@@ -1,0 +1,486 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\Toleranta FTS.net
+Start Time: Tue May  5 14:07:59 2026
+
+.step run=1
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Instance "u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u2:m15": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=2
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=3
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=4
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=5
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=6
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=7
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=8
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=9
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=10
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=11
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=12
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=13
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=14
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=15
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=16
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=17
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=18
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=19
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=20
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=21
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=22
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=23
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=24
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=25
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=26
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=27
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=28
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=29
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=30
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=31
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=32
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=33
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=34
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=35
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=36
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=37
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=38
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=39
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=40
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=41
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=42
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=43
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=44
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=45
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=46
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=47
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=48
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=49
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step run=50
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 2.721 seconds.
+
+Files loaded:
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\Toleranta FTS.net
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\ad8534.cir
+C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\BZX84C3V3.spice.txt
+
+
+Measurement: gain_pass_fts
+  step	mag(V(vfts)) 	at
+     1	(20.0930787846dB,0°)	10
+     2	(20.0618098649dB,0°)	10
+     3	(20.0774874004dB,0°)	10
+     4	(20.0774620063dB,0°)	10
+     5	(20.0618291853dB,0°)	10
+     6	(20.0774624387dB,0°)	10
+     7	(20.0774879626dB,0°)	10
+     8	(20.0618288403dB,0°)	10
+     9	(20.0774432624dB,0°)	10
+    10	(20.0618291853dB,0°)	10
+    11	(20.077488395dB,0°)	10
+    12	(20.0774432624dB,0°)	10
+    13	(20.0930977865dB,0°)	10
+    14	(20.077461188dB,0°)	10
+    15	(20.0930986048dB,0°)	10
+    16	(20.0774617862dB,0°)	10
+    17	(20.0618102232dB,0°)	10
+    18	(20.0618296177dB,0°)	10
+    19	(20.0618284079dB,0°)	10
+    20	(20.0618291853dB,0°)	10
+    21	(20.0931243429dB,0°)	10
+    22	(20.0774422535dB,0°)	10
+    23	(20.0618097975dB,0°)	10
+    24	(20.0774879626dB,0°)	10
+    25	(20.0618295936dB,0°)	10
+    26	(20.0931243429dB,0°)	10
+    27	(20.0774622851dB,0°)	10
+    28	(20.0931233644dB,0°)	10
+    29	(20.0774612289dB,0°)	10
+    30	(20.093098233dB,0°)	10
+    31	(20.0774624387dB,0°)	10
+    32	(20.0774618848dB,0°)	10
+    33	(20.0774619674dB,0°)	10
+    34	(20.0930973541dB,0°)	10
+    35	(20.0774624387dB,0°)	10
+    36	(20.0931233644dB,0°)	10
+    37	(20.0931239105dB,0°)	10
+    38	(20.0930792104dB,0°)	10
+    39	(20.0774620063dB,0°)	10
+    40	(20.0618548965dB,0°)	10
+    41	(20.0930978006dB,0°)	10
+    42	(20.0774626328dB,0°)	10
+    43	(20.0618283671dB,0°)	10
+    44	(20.0774426854dB,0°)	10
+    45	(20.0931237968dB,0°)	10
+    46	(20.0774617532dB,0°)	10
+    47	(20.0931233484dB,0°)	10
+    48	(20.0774616204dB,0°)	10
+    49	(20.0618284079dB,0°)	10
+    50	(20.0774424712dB,0°)	10
+
+Measurement: target_3db_fts
+  step	gain_pass_fts/1.414
+     1	(17.0840905954dB,0°)
+     2	(17.0528216757dB,0°)
+     3	(17.0684992112dB,0°)
+     4	(17.068473817dB,0°)
+     5	(17.052840996dB,0°)
+     6	(17.0684742495dB,0°)
+     7	(17.0684997734dB,0°)
+     8	(17.0528406511dB,0°)
+     9	(17.0684550732dB,0°)
+    10	(17.052840996dB,0°)
+    11	(17.0685002058dB,0°)
+    12	(17.0684550732dB,0°)
+    13	(17.0841095973dB,0°)
+    14	(17.0684729988dB,0°)
+    15	(17.0841104156dB,0°)
+    16	(17.068473597dB,0°)
+    17	(17.052822034dB,0°)
+    18	(17.0528414284dB,0°)
+    19	(17.0528402187dB,0°)
+    20	(17.052840996dB,0°)
+    21	(17.0841361536dB,0°)
+    22	(17.0684540643dB,0°)
+    23	(17.0528216083dB,0°)
+    24	(17.0684997734dB,0°)
+    25	(17.0528414044dB,0°)
+    26	(17.0841361536dB,0°)
+    27	(17.0684740959dB,0°)
+    28	(17.0841351751dB,0°)
+    29	(17.0684730397dB,0°)
+    30	(17.0841100438dB,0°)
+    31	(17.0684742495dB,0°)
+    32	(17.0684736956dB,0°)
+    33	(17.0684737782dB,0°)
+    34	(17.0841091649dB,0°)
+    35	(17.0684742495dB,0°)
+    36	(17.0841351751dB,0°)
+    37	(17.0841357212dB,0°)
+    38	(17.0840910211dB,0°)
+    39	(17.068473817dB,0°)
+    40	(17.0528667072dB,0°)
+    41	(17.0841096114dB,0°)
+    42	(17.0684744436dB,0°)
+    43	(17.0528401779dB,0°)
+    44	(17.0684544962dB,0°)
+    45	(17.0841356076dB,0°)
+    46	(17.068473564dB,0°)
+    47	(17.0841351591dB,0°)
+    48	(17.0684734312dB,0°)
+    49	(17.0528402187dB,0°)
+    50	(17.068454282dB,0°)
+
+Measurement: f_cutoff_fts
+  step	mag(V(vfts))=target_3dB_fts 
+     1	0.0470181884717
+     2	0.0463677260481
+     3	0.053097716669
+     4	0.0496616693579
+     5	0.0496616693485
+     6	0.0496296081428
+     7	0.0538015755108
+     8	0.0496875390068
+     9	0.046364049306
+    10	0.0496616693485
+    11	0.0537687637088
+    12	0.046364049306
+    13	0.050352329214
+    14	0.0503869835063
+    15	0.0496296081522
+    16	0.0496613691209
+    17	0.0463640492938
+    18	0.0496296081334
+    19	0.0497195602521
+    20	0.0496616693485
+    21	0.0537687637207
+    22	0.0464016911777
+    23	0.0470181884451
+    24	0.0538015755108
+    25	0.0502895128187
+    26	0.0537687637207
+    27	0.0503522351816
+    28	0.0537966777812
+    29	0.049719560266
+    30	0.0503522351967
+    31	0.0496296081428
+    32	0.0497198188728
+    33	0.0502895593138
+    34	0.0503869835214
+    35	0.0496296081428
+    36	0.0537966777812
+    37	0.0538015755226
+    38	0.0463640493183
+    39	0.0496616693579
+    40	0.0531027198409
+    41	0.0503867952561
+    42	0.0502895128288
+    43	0.0503869834912
+    44	0.0469857042836
+    45	0.0537637622995
+    46	0.0503243935366
+    47	0.05309771668
+    48	0.0503523291989
+    49	0.0497195602521
+    50	0.0470226808482
