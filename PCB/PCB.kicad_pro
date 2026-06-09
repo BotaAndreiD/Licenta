@@ -694,6 +694,18 @@
           "label": "Field6",
           "name": "Field6",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CREATOR",
+          "name": "CREATOR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VERIFIER",
+          "name": "VERIFIER",
+          "show": false
         }
       ],
       "filter_string": "",
