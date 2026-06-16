@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JhOg77BPsqo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\InterfataDigitala\\ECGMonitor\\ECGMonitor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\questpdf\\2024.3.4\\questpdf.2024.3.4.nupkg.sha512"
+  ],
+  "logs": []
+}

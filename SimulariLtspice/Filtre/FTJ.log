@@ -1,6 +1,6 @@
-LTspice 26.0.1 for Windows
+LTspice 26.0.2 for Windows
 Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\FTJ.net
-Start Time: Tue May 12 16:40:25 2026
+Start Time: Fri Jun 12 13:31:41 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -34,7 +34,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.125 seconds.
+Total elapsed time: 0.150 seconds.
 
 Files loaded:
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Filtre\FTJ.net

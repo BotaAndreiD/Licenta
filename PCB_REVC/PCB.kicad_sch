@@ -9609,8 +9609,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1n"
-			(at 44.704 117.602 0)
+		(property "Value" "1000p"
+			(at 40.894 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9645,7 +9645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c102f4hactu/cap-1000pf-16v-mlcc-0603/dp/4198435"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/1206n102j500ct/cap-1000pf-50v-5-c0g-np0-1206/dp/2497128"
 			(at 49.53 116.84 0)
 			(effects
 				(font
@@ -9732,7 +9732,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_HandSolder"
 			(at 155.9052 199.39 0)
 			(effects
 				(font
@@ -9759,7 +9759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/kemet/t491a105k025at/cap-1-f-25v-10-1206-smd/dp/1457409"
 			(at 154.94 195.58 0)
 			(effects
 				(font
@@ -10129,7 +10129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/vishay/crcw060310m0dheap/res-10m-0-5-0-1w-0603-thick-film/dp/4140860"
+		(property "Field5" "https://ro.farnell.com/vishay/crcw120610m0dheap/res-aec-q200-10m-0-5-0-25w-1206/dp/3546449"
 			(at 57.15 116.84 0)
 			(effects
 				(font
@@ -10306,7 +10306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/rt0603brd0723k7l/res-23k7-0-1-0-1w-thin-film-0603/dp/4148441"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-0723k7l/res-23k7-1-0-25w-thick-film-1206/dp/4013449"
 			(at 293.37 95.25 90)
 			(effects
 				(font
@@ -10450,7 +10450,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7n"
+		(property "Value" "4700p"
 			(at 278.638 140.462 0)
 			(effects
 				(font
@@ -10486,7 +10486,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/kemet/c1206c472j5ractu/cap-4700pf-50v-5-x7r-1206/dp/2905831"
 			(at 275.59 140.97 0)
 			(effects
 				(font
@@ -10771,7 +10771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c105k4ractu/cap-1-f-16v-10-x7r-0603/dp/1650837"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/1206b105j250cp/cap-1uf-25v-mlcc-1206/dp/3881061"
 			(at 24.13 106.68 0)
 			(effects
 				(font
@@ -10876,7 +10876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/bzx84c3v3/zener-diode-0-35w-3-3v-sot-23/dp/2748158"
+		(property "Field5" "https://ro.farnell.com/diodes-inc/bzx84c3v6/diode-zener-3-6v-0-35w-sot23-3/dp/1902466"
 			(at 170.18 36.83 0)
 			(effects
 				(font
@@ -11104,7 +11104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 204.47 67.31 90)
 			(effects
 				(font
@@ -11212,7 +11212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/bzx84c3v3/zener-diode-0-35w-3-3v-sot-23/dp/2748158"
+		(property "Field5" "https://ro.farnell.com/diodes-inc/bzx84c3v6/diode-zener-3-6v-0-35w-sot23-3/dp/1902466"
 			(at 160.02 36.83 0)
 			(effects
 				(font
@@ -11324,7 +11324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/era3aeb3011v/res-3k01-0-1-0-1w-0603-metal-film/dp/1809781"
+		(property "Field5" "https://ro.farnell.com/bourns/cr1206-fx-3011elf/res-3k01-1-1206-thick-film/dp/2908452"
 			(at 262.89 120.65 0)
 			(effects
 				(font
@@ -11436,7 +11436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 213.36 38.1 0)
 			(effects
 				(font
@@ -11667,7 +11667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 171.45 123.19 0)
 			(effects
 				(font
@@ -11798,7 +11798,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 32.004 202.692 0)
 			(effects
 				(font
@@ -11834,7 +11834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 29.21 203.2 0)
 			(effects
 				(font
@@ -11948,6 +11948,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/harwin/m20-7820842/connector-rcpt-8pos-2-54mm-1row/dp/3225927"
+			(at 257.81 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "f6b81abf-805c-4689-8b3b-e25d7123eba9")
 		)
@@ -12033,7 +12042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 308.61 153.67 0)
 			(effects
 				(font
@@ -12135,7 +12144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/murata/grm188z71a106ka73d/cap-10uf-10v-mlcc-0603/dp/3790432"
+		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl31b106kahnnnf/capacitor-mlcc-10uf-x7r-25v-1206/dp/4539061"
 			(at 133.35 109.22 90)
 			(effects
 				(font
@@ -12444,7 +12453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 177.8 31.75 0)
 			(effects
 				(font
@@ -12544,7 +12553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/te-connectivity/cpf0603b158ke1/res-158k-0-1-0-063w-0603-thin/dp/2330940"
+		(property "Field5" "https://ro.farnell.com/panasonic/erj8enf1583v/res-158k-1-0-25w-1206-thick-film/dp/2307423"
 			(at 127 97.79 0)
 			(effects
 				(font
@@ -12656,7 +12665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 318.77 99.06 0)
 			(effects
 				(font
@@ -12898,7 +12907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/rt0603brd073k92l/res-3k92-0-1-0-1w-0603-thin-film/dp/3496638"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-073k92l/res-3k92-1-0-25w-thick-film-1206/dp/3952309"
 			(at 303.53 95.25 90)
 			(effects
 				(font
@@ -13075,7 +13084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u2002btl/res-20k-0-1-50v-0603-thin-film/dp/2502953"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr12x2002ftl/res-20k-1-0-25w-thick-film/dp/2447483"
 			(at 153.67 46.99 90)
 			(effects
 				(font
@@ -13198,7 +13207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/qt-brightek/qblp631-ag1/led-green-0805-63mcd-570nm-smd/dp/4469629"
+		(property "Field5" "https://ro.farnell.com/qt-brightek/qblp650-o/led-orange-1206-210mcd-605nm-smd/dp/4469638"
 			(at 44.45 39.37 90)
 			(effects
 				(font
@@ -13377,7 +13386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/bzx84c3v3/zener-diode-0-35w-3-3v-sot-23/dp/2748158"
+		(property "Field5" "https://ro.farnell.com/diodes-inc/bzx84c3v6/diode-zener-3-6v-0-35w-sot23-3/dp/1902466"
 			(at 170.18 59.69 0)
 			(effects
 				(font
@@ -13491,7 +13500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 90.17 27.94 90)
 			(effects
 				(font
@@ -13851,7 +13860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u1002btl/res-10k-0-1-50v-0603-thin-film/dp/2502937"
+		(property "Field5" "https://ro.farnell.com/yageo/rt1206brd0710kl/res-10k-0-1-0-25w-1206-thin-film/dp/3496756"
 			(at 179.07 44.45 90)
 			(effects
 				(font
@@ -13929,7 +13938,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 167.386 194.564 0)
 			(effects
 				(font
@@ -13965,7 +13974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 165.1 195.58 0)
 			(effects
 				(font
@@ -14078,7 +14087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 49.53 152.4 0)
 			(effects
 				(font
@@ -14310,7 +14319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u1003btl/res-100k-0-1-50v-0603-thin-film/dp/2502938"
+		(property "Field5" "https://ro.farnell.com/yageo/rt1206brd07100kl/res-100k-0-1-0-25w-1206-thin-film/dp/3496754"
 			(at 29.21 96.52 0)
 			(effects
 				(font
@@ -14422,7 +14431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr06x1001ftl/res-1k-1-0-1w-0603-thick-film/dp/2447272"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/wr12x1001ftl/res-1k-1-200v-1206-thick-film/dp/2502603"
 			(at 207.01 119.38 0)
 			(effects
 				(font
@@ -14590,7 +14599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/vishay/crcw060310m0dheap/res-10m-0-5-0-1w-0603-thick-film/dp/4140860"
+		(property "Field5" "https://ro.farnell.com/vishay/crcw120610m0dheap/res-aec-q200-10m-0-5-0-25w-1206/dp/3546449"
 			(at 31.75 134.62 0)
 			(effects
 				(font
@@ -14668,7 +14677,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 51.054 207.772 0)
 			(effects
 				(font
@@ -14704,7 +14713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 48.26 208.28 0)
 			(effects
 				(font
@@ -14782,7 +14791,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120n"
+		(property "Value" "0.1u"
 			(at 295.656 100.838 0)
 			(effects
 				(font
@@ -14818,7 +14827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/cc0603krx7r6bb124/capacitor-0-12uf-x7r-0603/dp/4255329"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 288.29 100.33 0)
 			(effects
 				(font
@@ -14930,7 +14939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/re0603dr-071ml/res-1m-0-5-0-1w-0603-thick-film/dp/1840601"
+		(property "Field5" "https://ro.farnell.com/koa/rn73r2bttd1004b25/res-1m-0-25w-metal-film-1206/dp/4877063"
 			(at 59.69 127 0)
 			(effects
 				(font
@@ -15042,7 +15051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 142.24 96.52 0)
 			(effects
 				(font
@@ -15142,7 +15151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 205.74 36.83 90)
 			(effects
 				(font
@@ -15248,7 +15257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u1002btl/res-10k-0-1-50v-0603-thin-film/dp/2502937"
+		(property "Field5" "https://ro.farnell.com/yageo/rt1206brd0710kl/res-10k-0-1-0-25w-1206-thin-film/dp/3496756"
 			(at 179.07 46.99 90)
 			(effects
 				(font
@@ -15360,7 +15369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/era3aeb912v/res-9k1-0-1-0-1w-0603-metal-film/dp/1670188"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr12x9101ftl/res-9k1-1-0-25w-thick-film/dp/2447549"
 			(at 116.84 120.65 0)
 			(effects
 				(font
@@ -15537,7 +15546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 316.23 144.78 0)
 			(effects
 				(font
@@ -15669,7 +15678,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120n"
+		(property "Value" "0.1u"
 			(at 292.608 127.762 0)
 			(effects
 				(font
@@ -15705,7 +15714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/cc0603krx7r6bb124/capacitor-0-12uf-x7r-0603/dp/4255329"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 289.56 128.27 0)
 			(effects
 				(font
@@ -15817,7 +15826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/era3aeb2743v/res-274k-0-1-0-1w-0603-metal-film/dp/4137033"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-07274kl/res-274k-1-0-25w-1206-thick-film/dp/3496195"
 			(at 284.48 135.89 90)
 			(effects
 				(font
@@ -15929,7 +15938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 64.77 30.48 0)
 			(effects
 				(font
@@ -16031,7 +16040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c105k4ractu/cap-1-f-16v-10-x7r-0603/dp/1650837"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/1206b105j250cp/cap-1uf-25v-mlcc-1206/dp/3881061"
 			(at 105.41 44.45 0)
 			(effects
 				(font
@@ -16136,7 +16145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u1003btl/res-100k-0-1-50v-0603-thin-film/dp/2502938"
+		(property "Field5" "https://ro.farnell.com/yageo/rt1206brd07100kl/res-100k-0-1-0-25w-1206-thin-film/dp/3496754"
 			(at 29.21 106.68 0)
 			(effects
 				(font
@@ -16214,7 +16223,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220n"
+		(property "Value" "0.22u"
 			(at 201.422 112.268 0)
 			(effects
 				(font
@@ -16250,7 +16259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/cc0603kpx7r8bb224/cap-0-22uf-25v-mlcc-0603/dp/3764505"
+		(property "Field5" "https://ro.farnell.com/avx/12065c224jat2a/cap-0-22-f-50v-5-x7r-1206/dp/1740703"
 			(at 194.31 109.22 0)
 			(effects
 				(font
@@ -16429,7 +16438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/kemet/c0603c105k4ractu/cap-1-f-16v-10-x7r-0603/dp/1650837"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/1206b105j250cp/cap-1uf-25v-mlcc-1206/dp/3881061"
 			(at 57.15 49.53 0)
 			(effects
 				(font
@@ -16532,7 +16541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/era3aeb2871v/res-2k87-0603-0-1-0-1w-metal-film/dp/1809779"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-072k87l/res-2k87-1-0-25w-1206-thick-film/dp/3496205"
 			(at 284.48 110.49 0)
 			(effects
 				(font
@@ -16644,7 +16653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/rt0603brd076k81l/res-6k81-0-1-0-1w-0603-thin-film/dp/3496662"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-076k81l/res-6k81-1-0-25w-1206-thick-film/dp/3496286"
 			(at 262.89 130.81 0)
 			(effects
 				(font
@@ -16756,7 +16765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/vishay/crcw060310m0dheap/res-10m-0-5-0-1w-0603-thick-film/dp/4140860"
+		(property "Field5" "https://ro.farnell.com/vishay/crcw120610m0dheap/res-aec-q200-10m-0-5-0-25w-1206/dp/3546449"
 			(at 24.13 134.62 0)
 			(effects
 				(font
@@ -16984,6 +16993,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/harwin/m20-7820842/connector-rcpt-8pos-2-54mm-1row/dp/3225927"
+			(at 285.75 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "185f1e1e-db70-4ab3-9772-df6b78250c58")
 		)
@@ -17069,7 +17087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/era3aeb1542v/res-15k4-0603-0-1-0-1w-metal-film/dp/1809851"
+		(property "Field5" "https://ro.farnell.com/vishay/crcw120615k4fkea/res-15k4-1-0-25w-1206-thick-film/dp/1653068"
 			(at 189.23 109.22 0)
 			(effects
 				(font
@@ -17480,7 +17498,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "1u"
 			(at 42.164 202.692 0)
 			(effects
 				(font
@@ -17489,7 +17507,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_HandSolder"
 			(at 40.3352 207.01 0)
 			(effects
 				(font
@@ -17516,7 +17534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/kemet/t491a105k025at/cap-1-f-25v-10-1206-smd/dp/1457409"
 			(at 39.37 203.2 0)
 			(effects
 				(font
@@ -17594,7 +17612,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 189.23 103.124 90)
 			(effects
 				(font
@@ -17630,7 +17648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b104kb8nnnc/capacitor-mlcc-0-1uf-x7r-50v-0603/dp/4539043"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 182.88 104.14 90)
 			(effects
 				(font
@@ -17807,7 +17825,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u1002btl/res-10k-0-1-50v-0603-thin-film/dp/2502937"
+		(property "Field5" "https://ro.farnell.com/yageo/rt1206brd0710kl/res-10k-0-1-0-25w-1206-thin-film/dp/3496756"
 			(at 207.01 129.54 0)
 			(effects
 				(font
@@ -17910,7 +17928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/rt0603brd07316kl/res-316k-0-1-0-1w-thin-film-0603/dp/4148550"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-07316kl/res-316k-1-0-25w-1206-thick-film/dp/3496218"
 			(at 127 113.03 0)
 			(effects
 				(font
@@ -17988,7 +18006,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120n"
+		(property "Value" "0.1u"
 			(at 292.1 86.36 90)
 			(effects
 				(font
@@ -18024,7 +18042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/cc0603krx7r6bb124/capacitor-0-12uf-x7r-0603/dp/4255329"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 290.83 87.63 90)
 			(effects
 				(font
@@ -18203,7 +18221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/murata/grm188z71a106ka73d/cap-10uf-10v-mlcc-0603/dp/3790432"
+		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl31b106kahnnnf/capacitor-mlcc-10uf-x7r-25v-1206/dp/4539061"
 			(at 121.92 104.14 90)
 			(effects
 				(font
@@ -18315,7 +18333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwf06r3162btl/res-31k6-0-1-0-1w-0603-thin-film/dp/2337131"
+		(property "Field5" "https://ro.farnell.com/panasonic/era8aeb3162v/res-31k6-0-1-0-25w-1206-metal/dp/2095069"
 			(at 182.88 97.79 90)
 			(effects
 				(font
@@ -18429,7 +18447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/bzx84c3v3/zener-diode-0-35w-3-3v-sot-23/dp/2748158"
+		(property "Field5" "https://ro.farnell.com/diodes-inc/bzx84c3v6/diode-zener-3-6v-0-35w-sot23-3/dp/1902466"
 			(at 160.02 59.69 0)
 			(effects
 				(font
@@ -18543,7 +18561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 284.48 31.75 90)
 			(effects
 				(font
@@ -18645,7 +18663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 132.08 33.02 90)
 			(effects
 				(font
@@ -18875,7 +18893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/panasonic/era3aeb8661v/res-8k66-0-1-metal-film-0603/dp/4541237"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-078k66l/res-8k66-1-0-25w-1206-thick-film/dp/3496299"
 			(at 294.64 135.89 90)
 			(effects
 				(font
@@ -18987,7 +19005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 182.88 146.05 90)
 			(effects
 				(font
@@ -19059,7 +19077,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 150.876 203.454 0)
 			(effects
 				(font
@@ -19095,7 +19113,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mc0603b472k500ct/cap-4700pf-50v-10-x7r-0603/dp/1759098"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 148.59 204.47 0)
 			(effects
 				(font
@@ -19173,7 +19191,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 205.74 107.188 90)
 			(effects
 				(font
@@ -19209,7 +19227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b104kb8nnnc/capacitor-mlcc-0-1uf-x7r-50v-0603/dp/4539043"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 199.39 104.14 90)
 			(effects
 				(font
@@ -19386,7 +19404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 144.78 124.46 0)
 			(effects
 				(font
@@ -19486,7 +19504,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwf06r3162btl/res-31k6-0-1-0-1w-0603-thin-film/dp/2337131"
+		(property "Field5" "https://ro.farnell.com/panasonic/era8aeb3162v/res-31k6-0-1-0-25w-1206-metal/dp/2095069"
 			(at 199.39 97.79 90)
 			(effects
 				(font
@@ -19600,7 +19618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl10b104kb8nnnc/capacitor-mlcc-0-1uf-x7r-50v-0603/dp/4539043"
+		(property "Field5" "https://ro.farnell.com/avx/12065c104jat2a/cap-0-1-f-50v-5-x7r-1206/dp/2280701"
 			(at 231.14 44.45 0)
 			(effects
 				(font
@@ -19712,7 +19730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr06x1001ftl/res-1k-1-0-1w-0603-thick-film/dp/2447272"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/wr12x1001ftl/res-1k-1-200v-1206-thick-film/dp/2502603"
 			(at 44.45 48.26 0)
 			(effects
 				(font
@@ -19827,7 +19845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 41.91 87.63 90)
 			(effects
 				(font
@@ -20058,7 +20076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 213.36 48.26 0)
 			(effects
 				(font
@@ -20223,7 +20241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/yageo/rt0603brd077k15l/res-7k15-0-1w-75v-thin-film-0603/dp/4729277"
+		(property "Field5" "https://ro.farnell.com/yageo/rc1206fr-077k15l/res-7k15-1-0-25w-thick-film-1206/dp/4013482"
 			(at 284.48 100.33 0)
 			(effects
 				(font
@@ -20400,7 +20418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr06x1001ftl/res-1k-1-0-1w-0603-thick-film/dp/2447272"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/wr12x1001ftl/res-1k-1-200v-1206-thick-film/dp/2502603"
 			(at 116.84 130.81 0)
 			(effects
 				(font
@@ -20579,7 +20597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/bzx84c3v3/zener-diode-0-35w-3-3v-sot-23/dp/2748158"
+		(property "Field5" "https://ro.farnell.com/diodes-inc/bzx84c3v6/diode-zener-3-6v-0-35w-sot23-3/dp/1902466"
 			(at 111.76 44.45 90)
 			(effects
 				(font
@@ -20691,7 +20709,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wf06u2002btl/res-20k-0-1-50v-0603-thin-film/dp/2502953"
+		(property "Field5" "https://ro.farnell.com/multicomp-pro/mcwr12x2002ftl/res-20k-1-0-25w-thick-film/dp/2447483"
 			(at 153.67 44.45 90)
 			(effects
 				(font
@@ -20910,7 +20928,7 @@
 				)
 			)
 		)
-		(property "Value" "634k"
+		(property "Value" "620k"
 			(at 120.396 96.012 0)
 			(effects
 				(font
@@ -20945,7 +20963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/multicomp-pro/wr06x6343ftl/res-634k-1-0-1w-0603-thick-film/dp/2670867"
+		(property "Field5" "https://ro.farnell.com/vishay/crcw1206620kfkea/res-620k-1-0-25w-1206-thick-film/dp/2139669"
 			(at 116.84 93.98 0)
 			(effects
 				(font
@@ -21122,7 +21140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 309.88 120.65 90)
 			(effects
 				(font
@@ -21293,7 +21311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/amphenol-communications-solutions/10138654-g04-03lf/conn-pin-header-3pos-1row-2mm/dp/3935467"
+		(property "Field5" "https://ro.farnell.com/harwin/m20-9774046/connector-header-40pos-2-54mm/dp/3226006"
 			(at 134.62 146.05 90)
 			(effects
 				(font
@@ -21401,7 +21419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "https://ro.farnell.com/murata/grm188z71a106ka73d/cap-10uf-10v-mlcc-0603/dp/3790432"
+		(property "Field5" "https://ro.farnell.com/samsung-electro-mechanics/cl31b106kahnnnf/capacitor-mlcc-10uf-x7r-25v-1206/dp/4539061"
 			(at 133.35 104.14 90)
 			(effects
 				(font

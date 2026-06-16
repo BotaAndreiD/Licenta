@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+    <PackageReference Include="QuestPDF" Version="2024.3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LOGO.png" />
+    <Resource Include="Sigla.png" />
+    <Resource Include="electrod1.png" />
+    <Resource Include="electrod2.png" />
+  </ItemGroup>
+</Project>
