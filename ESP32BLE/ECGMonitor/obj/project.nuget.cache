@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "1EEiDp3pX9Q=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\botaa\\.nuget\\packages\\inthehand.bluetoothle\\4.0.44\\inthehand.bluetoothle.4.0.44.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\questpdf\\2024.3.4\\questpdf.2024.3.4.nupkg.sha512",
+    "C:\\Users\\botaa\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}
