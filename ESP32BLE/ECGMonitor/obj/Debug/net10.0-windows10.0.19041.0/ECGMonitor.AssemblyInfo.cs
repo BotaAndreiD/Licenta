@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECGMonitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96273b540ce176924636fbcfb416ffb00b1a341e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd222fc8a37b0b665ef61f1a603a56c322783204")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECGMonitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECGMonitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

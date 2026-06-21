@@ -1,0 +1,309 @@
+<Window
+  x:Class="ECGMonitor.ReviewWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:oxy="http://oxyplot.org/wpf"
+  xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
+  Title="Vizualizare ECG — CardioMed"
+  Height="720"
+  Width="1150"
+  Background="#0D1117"
+  WindowStartupLocation="CenterScreen"
+  WindowStyle="None"
+  ResizeMode="CanResize"
+  StateChanged="Window_StateChanged"
+>
+  <shell:WindowChrome.WindowChrome>
+    <shell:WindowChrome
+      CaptionHeight="40"
+      ResizeBorderThickness="6"
+      GlassFrameThickness="0"
+      CornerRadius="0"
+      UseAeroCaptionButtons="False"
+    />
+  </shell:WindowChrome.WindowChrome>
+
+  <Window.Resources>
+    <Style x:Key="CaptionBtnStyle" TargetType="Button">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="#8B949E" />
+      <Setter Property="FontFamily" Value="Segoe UI" />
+      <Setter Property="FontSize" Value="13" />
+      <Setter Property="Width" Value="44" />
+      <Setter Property="Height" Value="32" />
+      <Setter Property="Cursor" Value="Arrow" />
+      <Setter Property="shell:WindowChrome.IsHitTestVisibleInChrome" Value="True" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <Border Background="{TemplateBinding Background}" CornerRadius="4">
+              <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#21262D" />
+                <Setter Property="Foreground" Value="#E6EDF3" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="CaptionCloseBtnStyle" TargetType="Button" BasedOn="{StaticResource CaptionBtnStyle}">
+      <Style.Triggers>
+        <Trigger Property="IsMouseOver" Value="True">
+          <Setter Property="Background" Value="#E81123" />
+          <Setter Property="Foreground" Value="White" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+
+    <Style x:Key="FilterChipStyle" TargetType="CheckBox">
+      <Setter Property="Foreground" Value="#E6EDF3" />
+      <Setter Property="FontFamily" Value="Segoe UI" />
+      <Setter Property="FontSize" Value="11" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="CheckBox">
+            <Border
+              x:Name="Chip"
+              Background="#21262D"
+              CornerRadius="12"
+              Padding="10,6"
+              Margin="0,0,0,6"
+            >
+              <StackPanel Orientation="Horizontal">
+                <Ellipse
+                  Width="8"
+                  Height="8"
+                  Fill="{Binding ColorHex}"
+                  VerticalAlignment="Center"
+                  Margin="0,0,7,0"
+                />
+                <ContentPresenter VerticalAlignment="Center" />
+              </StackPanel>
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsChecked" Value="False">
+                <Setter TargetName="Chip" Property="Opacity" Value="0.35" />
+              </Trigger>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="Chip" Property="Background" Value="#30363D" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Style TargetType="ScrollBar">
+      <Setter Property="Width" Value="8" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="ScrollBar">
+            <Grid Background="Transparent">
+              <Track x:Name="PART_Track" IsDirectionReversed="True" Width="8" HorizontalAlignment="Center">
+                <Track.Thumb>
+                  <Thumb>
+                    <Thumb.Template>
+                      <ControlTemplate TargetType="Thumb">
+                        <Border Background="#30363D" CornerRadius="4" Width="6" />
+                      </ControlTemplate>
+                    </Thumb.Template>
+                  </Thumb>
+                </Track.Thumb>
+                <Track.DecreaseRepeatButton>
+                  <RepeatButton Opacity="0" Command="ScrollBar.PageUpCommand" Width="0" />
+                </Track.DecreaseRepeatButton>
+                <Track.IncreaseRepeatButton>
+                  <RepeatButton Opacity="0" Command="ScrollBar.PageDownCommand" Width="0" />
+                </Track.IncreaseRepeatButton>
+              </Track>
+            </Grid>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Window.Resources>
+
+  <Grid x:Name="RootGrid">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="40" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <!-- Caption bar -->
+    <Border Grid.Row="0" Background="#161B22" BorderBrush="#21262D" BorderThickness="0,0,0,1">
+      <Grid Margin="16,0,0,0">
+        <TextBlock
+          Text="Vizualizare ECG — CardioMed"
+          Foreground="#8B949E"
+          FontSize="12"
+          FontFamily="Segoe UI"
+          VerticalAlignment="Center"
+        />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+          <Button
+            Content="—"
+            Style="{StaticResource CaptionBtnStyle}"
+            Click="MinimizeBtn_Click"
+          />
+          <Button
+            x:Name="MaximizeBtn"
+            Content="▢"
+            Style="{StaticResource CaptionBtnStyle}"
+            Click="MaximizeBtn_Click"
+          />
+          <Button Content="✕" Style="{StaticResource CaptionCloseBtnStyle}" Click="CloseBtn_Click" />
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <Grid Grid.Row="1" Margin="16">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="280" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <TextBlock
+      x:Name="HeaderText"
+      Grid.Row="0"
+      Grid.ColumnSpan="2"
+      Foreground="#E6EDF3"
+      FontSize="16"
+      FontWeight="Bold"
+      FontFamily="Segoe UI"
+      Margin="0,0,0,12"
+    />
+
+    <Border Grid.Row="1" Grid.Column="0" Background="#161B22" CornerRadius="10" Padding="8">
+      <Grid>
+        <oxy:PlotView x:Name="PlotView" Background="Transparent" />
+        <Button
+          x:Name="ShowAllBtn"
+          Content="↺  Reset zoom"
+          Click="ShowAllBtn_Click"
+          Background="#21262D"
+          Foreground="#E6EDF3"
+          BorderBrush="#30363D"
+          BorderThickness="1"
+          Padding="12,7"
+          FontSize="11"
+          FontFamily="Segoe UI"
+          Cursor="Hand"
+          HorizontalAlignment="Right"
+          VerticalAlignment="Top"
+          Margin="0,28,28,0"
+          Opacity="0.9"
+        >
+          <Button.Template>
+            <ControlTemplate TargetType="Button">
+              <Border
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="16"
+                Padding="{TemplateBinding Padding}"
+              >
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+              </Border>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                  <Setter Property="Background" Value="#30363D" />
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Button.Template>
+        </Button>
+      </Grid>
+    </Border>
+
+    <Border
+      Grid.Row="1"
+      Grid.Column="1"
+      Background="#161B22"
+      CornerRadius="10"
+      Margin="12,0,0,0"
+      Padding="12"
+    >
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+          Text="EVENIMENTE DETECTATE"
+          Foreground="#8B949E"
+          FontSize="11"
+          FontWeight="SemiBold"
+          FontFamily="Segoe UI"
+          Margin="0,0,0,8"
+        />
+
+        <ItemsControl x:Name="FilterList" Grid.Row="1" Margin="0,0,0,8">
+          <ItemsControl.ItemTemplate>
+            <DataTemplate>
+              <CheckBox
+                Style="{StaticResource FilterChipStyle}"
+                IsChecked="{Binding IsChecked, Mode=TwoWay}"
+                Checked="Filter_Changed"
+                Unchecked="Filter_Changed"
+              >
+                <TextBlock Text="{Binding Label}" />
+              </CheckBox>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <ListBox
+          x:Name="EventsList"
+          Grid.Row="2"
+          Background="Transparent"
+          BorderThickness="0"
+          Foreground="#E6EDF3"
+          MouseDoubleClick="EventsList_MouseDoubleClick"
+        >
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <Border
+                Background="#21262D"
+                CornerRadius="6"
+                Padding="8"
+                Margin="0,0,0,6"
+                BorderThickness="3,0,0,0"
+                BorderBrush="{Binding ColorHex}"
+              >
+                <StackPanel>
+                  <TextBlock
+                    Text="{Binding TypeAndTime}"
+                    Foreground="{Binding ColorHex}"
+                    FontSize="11"
+                    FontWeight="SemiBold"
+                    FontFamily="Segoe UI"
+                  />
+                  <TextBlock
+                    Text="{Binding Detail}"
+                    Foreground="#8B949E"
+                    FontSize="10"
+                    FontFamily="Segoe UI"
+                    Margin="0,2,0,0"
+                    TextWrapping="Wrap"
+                  />
+                </StackPanel>
+              </Border>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
+      </Grid>
+    </Border>
+    </Grid>
+  </Grid>
+</Window>

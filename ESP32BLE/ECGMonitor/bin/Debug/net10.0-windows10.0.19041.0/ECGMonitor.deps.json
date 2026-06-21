@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v10.0": {
       "ECGMonitor/1.0.0": {
         "dependencies": {
-          "InTheHand.BluetoothLE": "4.0.44",
           "OxyPlot.Wpf": "2.1.0",
           "QuestPDF": "2024.3.4",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.57"
@@ -26,14 +25,6 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.48161"
-          }
-        }
-      },
-      "InTheHand.BluetoothLE/4.0.44": {
-        "runtime": {
-          "lib/net9.0-windows10.0.19041/InTheHand.BluetoothLE.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.44.1119"
           }
         }
       },
@@ -120,13 +111,6 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
-    },
-    "InTheHand.BluetoothLE/4.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kjqoEWZOTWX9vtsDeGNAnBo0GtbiScybeV0LN/7t5wyJtaDLPE0/QhqzDpaZ2goLAC5WYE5H15farGPkle/ZfA==",
-      "path": "inthehand.bluetoothle/4.0.44",
-      "hashPath": "inthehand.bluetoothle.4.0.44.nupkg.sha512"
     },
     "OxyPlot.Core/2.1.0": {
       "type": "package",

@@ -2,19 +2,6 @@
   "version": 4,
   "targets": {
     "net10.0-windows10.0.19041.0": {
-      "InTheHand.BluetoothLE/4.0.44": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0-windows10.0.19041/InTheHand.BluetoothLE.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0-windows10.0.19041/InTheHand.BluetoothLE.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "OxyPlot.Core/2.1.0": {
         "type": "package",
         "compile": {
@@ -112,42 +99,6 @@
     }
   },
   "libraries": {
-    "InTheHand.BluetoothLE/4.0.44": {
-      "sha512": "kjqoEWZOTWX9vtsDeGNAnBo0GtbiScybeV0LN/7t5wyJtaDLPE0/QhqzDpaZ2goLAC5WYE5H15farGPkle/ZfA==",
-      "type": "package",
-      "path": "inthehand.bluetoothle/4.0.44",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "32feet-package-icon.png",
-        "README.md",
-        "inthehand.bluetoothle.4.0.44.nupkg.sha512",
-        "inthehand.bluetoothle.nuspec",
-        "lib/monoandroid10.0/InTheHand.BluetoothLE.dll",
-        "lib/monoandroid10.0/InTheHand.BluetoothLE.xml",
-        "lib/net9.0-android35.0/InTheHand.BluetoothLE.dll",
-        "lib/net9.0-android35.0/InTheHand.BluetoothLE.xml",
-        "lib/net9.0-ios18.0/InTheHand.BluetoothLE.dll",
-        "lib/net9.0-ios18.0/InTheHand.BluetoothLE.xml",
-        "lib/net9.0-maccatalyst18.0/InTheHand.BluetoothLE.dll",
-        "lib/net9.0-maccatalyst18.0/InTheHand.BluetoothLE.xml",
-        "lib/net9.0-windows10.0.19041/InTheHand.BluetoothLE.dll",
-        "lib/net9.0-windows10.0.19041/InTheHand.BluetoothLE.xml",
-        "lib/net9.0/InTheHand.BluetoothLE.dll",
-        "lib/net9.0/InTheHand.BluetoothLE.xml",
-        "lib/netstandard2.0/InTheHand.BluetoothLE.dll",
-        "lib/netstandard2.0/InTheHand.BluetoothLE.xml",
-        "lib/uap10.0.17763/InTheHand.BluetoothLE.dll",
-        "lib/uap10.0.17763/InTheHand.BluetoothLE.pri",
-        "lib/uap10.0.17763/InTheHand.BluetoothLE.xml",
-        "lib/xamarinios10/InTheHand.BluetoothLE.dll",
-        "lib/xamarinios10/InTheHand.BluetoothLE.xml",
-        "lib/xamarintvos10/InTheHand.BluetoothLE.dll",
-        "lib/xamarintvos10/InTheHand.BluetoothLE.xml",
-        "lib/xamarinwatchos10/InTheHand.BluetoothLE.dll",
-        "lib/xamarinwatchos10/InTheHand.BluetoothLE.xml"
-      ]
-    },
     "OxyPlot.Core/2.1.0": {
       "sha512": "jG+Ct3T59fXDG2LE1hyUaXqH7i+h5Nfway1iB0+0NaY2mvDsz8Row/BKjiBWCt5NHp3+q9JSMiD2wpin2hh3kw==",
       "type": "package",
@@ -272,25 +223,24 @@
   },
   "projectFileDependencyGroups": {
     "net10.0-windows10.0.19041.0": [
-      "InTheHand.BluetoothLE >= 4.0.44",
       "OxyPlot.Wpf >= 2.1.0",
       "QuestPDF >= 2024.3.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\botaa\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrei\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
+      "projectUniqueName": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
       "projectName": "ECGMonitor",
-      "projectPath": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
-      "packagesPath": "C:\\Users\\botaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\obj\\",
+      "projectPath": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
+      "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\botaa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0-windows10.0.19041.0"
@@ -322,10 +272,6 @@
         "framework": "net10.0-windows10.0.19041",
         "targetAlias": "net10.0-windows10.0.19041.0",
         "dependencies": {
-          "InTheHand.BluetoothLE": {
-            "target": "Package",
-            "version": "[4.0.44, )"
-          },
           "OxyPlot.Wpf": {
             "target": "Package",
             "version": "[2.1.0, )"

@@ -1,156 +1,58 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Threading;
 
 namespace ECGMonitor
 {
     public partial class SplashScreen : Window
     {
-        private DispatcherTimer _timer = new();
-        private double _currentProgress = 0;
-        private double _targetProgress = 0;
-        private int _step = 0;
-
-        // Date preincarcate — accesibile din MainWindow
-        public List<double> PreloadedTimes { get; private set; } = new();
-        public List<double> PreloadedAmplitudes { get; private set; } = new();
-
-        private readonly (string text, double progress)[] _steps =
-        {
-            ("Se încarcă modulele sistem...", 0.15),
-            ("Se inițializează interfața grafică...", 0.35),
-            ("Se configurează motorul ECG...", 0.55),
-            ("Se pregătesc algoritmii de detecție...", 0.75),
-            ("Se încarcă datele ECG...", 0.95),
-        };
+        private TaskCompletionSource<bool>? _retryRequested;
 
         public SplashScreen()
         {
             InitializeComponent();
-            Loaded += OnLoaded;
+            Loaded += async (s, e) => await ConnectLoop();
         }
 
-        private async void OnLoaded(object sender, RoutedEventArgs e)
+        private async Task ConnectLoop()
         {
-            // Timer smooth pentru bara de progres — 30fps
-            var smoothTimer = new DispatcherTimer();
-            smoothTimer.Interval = TimeSpan.FromMilliseconds(16);
-            smoothTimer.Tick += (s, ev) =>
+            bool connected = false;
+
+            while (!connected)
             {
-                if (_currentProgress < _targetProgress)
+                RetryBtn.Visibility = Visibility.Collapsed;
+                LoadingBar.Background = new SolidColorBrush(Color.FromRgb(88, 166, 255));
+                LoadingBar.Width = Math.Max(0, (ActualWidth - 96) * 0.4);
+
+                connected = await BleConnectionService.ConnectAsync(status =>
+                    Dispatcher.Invoke(() => LoadingText.Text = status)
+                );
+
+                if (!connected)
                 {
-                    _currentProgress += 0.008;
-                    if (_currentProgress > _targetProgress)
-                        _currentProgress = _targetProgress;
+                    LoadingBar.Background = new SolidColorBrush(Color.FromRgb(255, 107, 107));
+                    LoadingBar.Width = Math.Max(0, ActualWidth - 96);
+                    RetryBtn.Visibility = Visibility.Visible;
 
-                    double barWidth = Math.Max(0, (ActualWidth - 96) * _currentProgress);
-                    LoadingBar.Width = barWidth;
+                    _retryRequested = new TaskCompletionSource<bool>();
+                    await _retryRequested.Task;
                 }
-            };
-            smoothTimer.Start();
-
-            // Pas cu pas cu delays reale
-            foreach (var (text, progress) in _steps)
-            {
-                LoadingText.Text = text;
-                _targetProgress = progress;
-                await Task.Delay(500);
-                _step++;
             }
 
-            // Incarcare reala date ECG in background
-            LoadingText.Text = "Se încarcă semnalul ECG...";
-            _targetProgress = 0.95;
-
-            await Task.Run(() => PreloadECGData());
-
-            _targetProgress = 1.0;
-            await Task.Delay(400);
-
-            smoothTimer.Stop();
             LoadingBar.Background = new SolidColorBrush(Color.FromRgb(63, 185, 80));
-            LoadingBar.Width = ActualWidth - 96;
-
-            await Task.Delay(300);
+            LoadingBar.Width = Math.Max(0, ActualWidth - 96);
+            LoadingText.Text = "Conectat — se încarcă interfața...";
+            await Task.Delay(500);
 
             DialogResult = true;
             Close();
         }
 
-        private void PreloadECGData()
+        private void RetryBtn_Click(object sender, RoutedEventArgs e)
         {
-            string[] possiblePaths =
-            {
-                "ekg_signal2.txt",
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ekg_signal2.txt"),
-                Path.Combine(Directory.GetCurrentDirectory(), "ekg_signal2.txt"),
-            };
-
-            string? filePath = null;
-            foreach (var p in possiblePaths)
-                if (File.Exists(p))
-                {
-                    filePath = p;
-                    break;
-                }
-
-            if (filePath == null)
-                return;
-
-            var lines = File.ReadAllLines(filePath);
-            foreach (var line in lines)
-            {
-                if (line.StartsWith("#") || string.IsNullOrWhiteSpace(line))
-                    continue;
-                var parts = line.Split('\t', StringSplitOptions.RemoveEmptyEntries);
-                if (parts.Length < 2)
-                    continue;
-                if (
-                    double.TryParse(
-                        parts[0],
-                        System.Globalization.NumberStyles.Float,
-                        System.Globalization.CultureInfo.InvariantCulture,
-                        out double t
-                    )
-                    && double.TryParse(
-                        parts[1],
-                        System.Globalization.NumberStyles.Float,
-                        System.Globalization.CultureInfo.InvariantCulture,
-                        out double amp
-                    )
-                )
-                {
-                    PreloadedTimes.Add(t);
-                    PreloadedAmplitudes.Add(amp * 1000.0);
-                }
-            }
-
-            // Skip primele 35 secunde
-            int startIndex = 0;
-            for (int i = 0; i < PreloadedTimes.Count; i++)
-            {
-                if (PreloadedTimes[i] >= 35.0)
-                {
-                    startIndex = i;
-                    break;
-                }
-            }
-            if (startIndex > 0)
-            {
-                PreloadedTimes = PreloadedTimes.GetRange(
-                    startIndex,
-                    PreloadedTimes.Count - startIndex
-                );
-                PreloadedAmplitudes = PreloadedAmplitudes.GetRange(
-                    startIndex,
-                    PreloadedAmplitudes.Count - startIndex
-                );
-            }
+            RetryBtn.Visibility = Visibility.Collapsed;
+            _retryRequested?.TrySetResult(true);
         }
     }
 }

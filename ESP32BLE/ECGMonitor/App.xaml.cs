@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
 namespace ECGMonitor
 {
@@ -9,19 +8,20 @@ namespace ECGMonitor
         {
             base.OnStartup(e);
 
-            AppDomain.CurrentDomain.UnhandledException += (s, args) =>
-            {
-                MessageBox.Show(args.ExceptionObject.ToString(), "Eroare fatala");
-            };
+            ShutdownMode = ShutdownMode.OnExplicitShutdown;
 
-            DispatcherUnhandledException += (s, args) =>
+            var splash = new SplashScreen();
+            bool? connected = splash.ShowDialog();
+            if (connected != true)
             {
-                MessageBox.Show(args.Exception.ToString(), "Eroare UI");
-                args.Handled = true;
-            };
+                Shutdown();
+                return;
+            }
 
-            var window = new MainWindow();
-            window.Show();
+            var main = new MainWindow();
+            MainWindow = main;
+            ShutdownMode = ShutdownMode.OnMainWindowClose;
+            main.Show();
         }
     }
 }
