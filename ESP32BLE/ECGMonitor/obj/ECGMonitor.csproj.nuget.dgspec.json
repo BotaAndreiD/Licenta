@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj": {}
+    "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj": {
+    "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
+        "projectUniqueName": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
         "projectName": "ECGMonitor",
-        "projectPath": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
-        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\obj\\",
+        "projectPath": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
+        "packagesPath": "C:\\Users\\botaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\botaa\\Documents\\Licenta\\Licenta\\ESP32BLE\\ECGMonitor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\botaa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0-windows10.0.19041.0"

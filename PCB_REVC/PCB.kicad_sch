@@ -9690,6 +9690,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,2541 lei"
+			(at 49.53 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "caec2432-69d4-4e62-b00c-1ea60925d8ef")
 		)
@@ -9804,6 +9813,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,6776 lei"
+			(at 154.94 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "96485ff9-7361-408e-ae56-57101c76cf54")
 		)
@@ -9903,7 +9921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "None"
+		(property "Price" "9,40 RON"
 			(at 207.01 196.85 0)
 			(effects
 				(font
@@ -10012,6 +10030,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 207.01 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://www.alibaba.com/product-detail/ESP32-C3-Super-Mini-Development-Board_1601046630498.html"
 			(at 207.01 196.85 0)
 			(effects
 				(font
@@ -10166,6 +10193,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 57.15 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,4961 lei"
 			(at 57.15 116.84 0)
 			(effects
 				(font
@@ -10343,6 +10379,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 293.37 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0605 lei"
 			(at 293.37 95.25 90)
 			(effects
 				(font
@@ -10531,6 +10576,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,2541 lei"
+			(at 275.59 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c2639483-d408-4359-98e9-67f391317204")
 		)
@@ -10628,6 +10682,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 146.05 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,7744 lei"
 			(at 146.05 52.07 90)
 			(effects
 				(font
@@ -10807,6 +10870,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,3388 lei"
+			(at 24.13 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "57f99998-71d6-461d-b594-a010692ec81d")
 		)
@@ -10913,6 +10985,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 170.18 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,2662 lei"
 			(at 170.18 36.83 0)
 			(effects
 				(font
@@ -11034,6 +11115,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 3,1097 lei"
+			(at 129.54 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "R"
 			(uuid "95da02d8-364d-4707-8123-a078346f8d6d")
 		)
@@ -11132,6 +11222,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 204.47 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 204.47 67.31 90)
 			(effects
 				(font
@@ -11257,6 +11356,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,2662 lei"
+			(at 160.02 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "93cf3bcc-67be-4352-8e3b-758e85aafa49")
 		)
@@ -11369,6 +11477,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0605 lei"
+			(at 262.89 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c85d93e5-7599-4029-b69b-725b2bedf0b5")
 		)
@@ -11464,6 +11581,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 213.36 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 213.36 38.1 0)
 			(effects
 				(font
@@ -11703,6 +11829,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 171.45 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b3cbc4a-f6f9-4045-b7b7-7ecb399d1ff8")
 		)
@@ -11879,6 +12014,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,2541 lei"
+			(at 29.21 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "021d900a-312b-43a2-a00b-bdbcb85b9d84")
 		)
@@ -11949,6 +12093,15 @@
 			)
 		)
 		(property "Field5" "https://ro.farnell.com/harwin/m20-7820842/connector-rcpt-8pos-2-54mm-1row/dp/3225927"
+			(at 257.81 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,0699 lei"
 			(at 257.81 203.2 0)
 			(effects
 				(font
@@ -12078,6 +12231,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 308.61 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "34b5c78b-344a-4cd3-aac6-300f44af68af")
 		)
@@ -12181,6 +12343,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 133.35 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0,3509 lei"
 			(at 133.35 109.22 90)
 			(effects
 				(font
@@ -12359,6 +12530,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/analog-devices/max41400atb-t/instrument-amp-120db-tdfn-ep-8/dp/4627475"
+			(at 238.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 11,3861 lei"
+			(at 238.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2238c137-7e0a-4b04-be3d-91137fc6d875")
 		)
@@ -12489,6 +12678,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 177.8 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f4544524-b4eb-463a-9941-063055ff83d0")
 		)
@@ -12590,6 +12788,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 127 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,1815 lei"
 			(at 127 97.79 0)
 			(effects
 				(font
@@ -12701,6 +12908,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 318.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bddc03db-6d04-45ca-875f-31a3048566f8")
 		)
@@ -12796,6 +13012,24 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 214.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/analog-devices/ad8534arz/op-amp-3mhz-40-to-85deg-c-nsoic/dp/4019797"
+			(at 214.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 6,897 lei"
 			(at 214.63 99.06 0)
 			(effects
 				(font
@@ -12944,6 +13178,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 303.53 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0726 lei"
 			(at 303.53 95.25 90)
 			(effects
 				(font
@@ -13129,6 +13372,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0484 lei"
+			(at 153.67 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cc06b447-e5a8-41a0-a1ae-970e5ecf883a")
 		)
@@ -13244,6 +13496,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 44.45 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,3388 lei"
 			(at 44.45 39.37 90)
 			(effects
 				(font
@@ -13431,6 +13692,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,2662 lei"
+			(at 170.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ee2786a9-cfed-4bdf-938d-082f8bf6813f")
 		)
@@ -13528,6 +13798,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 90.17 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 90.17 27.94 90)
 			(effects
 				(font
@@ -13905,6 +14184,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,6655 lei"
+			(at 179.07 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2f656072-6184-41be-89be-fcd4ff51dc94")
 		)
@@ -14019,6 +14307,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,2541 lei"
+			(at 165.1 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "10a9e676-888a-43d9-99d5-f2ff02a21f3e")
 		)
@@ -14115,6 +14412,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 49.53 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 49.53 152.4 0)
 			(effects
 				(font
@@ -14364,6 +14670,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,7018 lei"
+			(at 29.21 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "59d866a5-d068-41ea-bb19-7b22abd8e938")
 		)
@@ -14459,6 +14774,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 207.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0484 lei"
 			(at 207.01 119.38 0)
 			(effects
 				(font
@@ -14644,6 +14968,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,4961 lei"
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0af1df2e-9f52-46ed-b7b1-aa66a783cce0")
 		)
@@ -14750,6 +15083,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 48.26 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0,2541 lei"
 			(at 48.26 208.28 0)
 			(effects
 				(font
@@ -14872,6 +15214,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,2541 lei"
+			(at 288.29 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cfb41735-e8aa-4f06-a9f4-932ae08dea85")
 		)
@@ -14984,6 +15335,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,7502 lei"
+			(at 59.69 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f1a4337c-6a04-4ef8-b799-3e0f3e23e927")
 		)
@@ -15087,6 +15447,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3d4a3cdb-0564-48f2-b268-961c94b2e7fc")
 		)
@@ -15179,6 +15548,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 205.74 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 205.74 36.83 90)
 			(effects
 				(font
@@ -15302,6 +15680,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,6655 lei"
+			(at 179.07 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5f78c6ab-9c93-44f0-ba0d-7fc4895f20b8")
 		)
@@ -15406,6 +15793,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 116.84 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0484 lei"
 			(at 116.84 120.65 0)
 			(effects
 				(font
@@ -15574,6 +15970,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 316.23 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 316.23 144.78 0)
 			(effects
 				(font
@@ -15759,6 +16164,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,2541 lei"
+			(at 289.56 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1626dd40-8edb-4e43-841e-ff48edec2911")
 		)
@@ -15871,6 +16285,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0726 lei"
+			(at 284.48 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2e28c863-e8c3-4419-b9d1-263029d7c7e5")
 		)
@@ -15974,6 +16397,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 64.77 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "87bcd2be-2023-4212-8426-8ae936a076bb")
 		)
@@ -16068,6 +16500,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,3388 lei"
 			(at 105.41 44.45 0)
 			(effects
 				(font
@@ -16190,6 +16631,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,7018 lei"
+			(at 29.21 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1f8d570a-20d7-457a-9aba-5996262828f9")
 		)
@@ -16296,6 +16746,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 194.31 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,3388 lei"
 			(at 194.31 109.22 0)
 			(effects
 				(font
@@ -16474,6 +16933,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,3388 lei"
+			(at 57.15 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "69a4a91f-222d-4c3e-9e3d-dae3bd56c182")
 		)
@@ -16578,6 +17046,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 284.48 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0726 lei"
 			(at 284.48 110.49 0)
 			(effects
 				(font
@@ -16698,6 +17175,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0726 lei"
+			(at 262.89 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "447f6ce2-c24c-46a7-9ea1-46ea4395209c")
 		)
@@ -16802,6 +17288,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 24.13 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,4961 lei"
 			(at 24.13 134.62 0)
 			(effects
 				(font
@@ -16915,6 +17410,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" "https://ro.farnell.com/analog-devices/adp151aujz-3-3-r7/ldo-fixed-3-3v-0-2a-tsot-5-125deg/dp/4026816"
+			(at 59.69 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 4,6464 lei"
+			(at 59.69 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "ce9ec10e-8752-4376-b9fb-f0c9a184c30b")
 		)
@@ -16994,6 +17507,15 @@
 			)
 		)
 		(property "Field5" "https://ro.farnell.com/harwin/m20-7820842/connector-rcpt-8pos-2-54mm-1row/dp/3225927"
+			(at 285.75 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,0699 lei"
 			(at 285.75 203.2 0)
 			(effects
 				(font
@@ -17132,6 +17654,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,121 lei"
+			(at 189.23 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d26b5844-55e0-453e-9656-d66692cd6b70")
 		)
@@ -17229,6 +17760,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 146.05 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,7744 lei"
 			(at 146.05 39.37 90)
 			(effects
 				(font
@@ -17391,6 +17931,24 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 66.04 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/analog-devices/ad7124-4bruz/adc-24bit-19-2ksps-tssop-24/dp/4016396"
+			(at 66.04 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 51,3887 lei"
 			(at 66.04 186.69 0)
 			(effects
 				(font
@@ -17579,6 +18137,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,6776 lei"
+			(at 39.37 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f1f80919-0f91-477c-ba37-938a61a8b832")
 		)
@@ -17685,6 +18252,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 182.88 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0,2541 lei"
 			(at 182.88 104.14 90)
 			(effects
 				(font
@@ -17861,6 +18437,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,6655 lei"
+			(at 207.01 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8fb11eb1-efa9-4b59-882d-debef6c0b488")
 		)
@@ -17965,6 +18550,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 127 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0726 lei"
 			(at 127 113.03 0)
 			(effects
 				(font
@@ -18079,6 +18673,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 290.83 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0,2541 lei"
 			(at 290.83 87.63 90)
 			(effects
 				(font
@@ -18266,6 +18869,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,3509 lei"
+			(at 121.92 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9e76a9ba-4710-4f04-bb81-f1ce756e16c8")
 		)
@@ -18370,6 +18982,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 182.88 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 1,2221 lei"
 			(at 182.88 97.79 90)
 			(effects
 				(font
@@ -18492,6 +19113,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,2662 lei"
+			(at 160.02 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f2643b78-bad6-4a5a-bae6-5e810acab54b")
 		)
@@ -18597,6 +19227,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 284.48 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f581bdfc-a4ae-486d-8e87-2d6a8c8938b7")
 		)
@@ -18691,6 +19330,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 132.08 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 132.08 33.02 90)
 			(effects
 				(font
@@ -18938,6 +19586,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0726 lei"
+			(at 294.64 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8e593908-e7b0-45e6-a0a5-b28a7ffd828b")
 		)
@@ -19033,6 +19690,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 182.88 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 182.88 146.05 90)
 			(effects
 				(font
@@ -19158,6 +19824,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,2541 lei"
+			(at 148.59 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "720ca3b5-a1cb-44a4-8deb-6581b47608fc")
 		)
@@ -19264,6 +19939,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 199.39 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0,2541 lei"
 			(at 199.39 104.14 90)
 			(effects
 				(font
@@ -19440,6 +20124,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 144.78 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "468ff6bd-fd98-4475-a36d-a6d88076551f")
 		)
@@ -19541,6 +20234,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 199.39 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 1,2221 lei"
 			(at 199.39 97.79 90)
 			(effects
 				(font
@@ -19663,6 +20365,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" "0,2541 lei"
+			(at 231.14 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "db419a74-8340-4356-b752-ecb66fc85fe0")
 		)
@@ -19775,6 +20486,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0484 lei"
+			(at 44.45 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "04ba9fe7-e313-437e-b74b-876e875b20c9")
 		)
@@ -19873,6 +20593,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 41.91 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 41.91 87.63 90)
 			(effects
 				(font
@@ -20112,6 +20841,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 213.36 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "463996cc-d5d0-446a-91a7-711c0c792fbb")
 		)
@@ -20278,6 +21016,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 284.48 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0726 lei"
 			(at 284.48 100.33 0)
 			(effects
 				(font
@@ -20455,6 +21202,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 116.84 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,0484 lei"
 			(at 116.84 130.81 0)
 			(effects
 				(font
@@ -20642,6 +21398,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,2662 lei"
+			(at 111.76 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb15cf54-097a-43dc-b706-dcb0786c6459")
 		)
@@ -20754,6 +21519,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 0,0484 lei"
+			(at 153.67 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "87385438-5744-43c3-b188-369b64a537c2")
 		)
@@ -20852,6 +21626,24 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" "https://ro.farnell.com/analog-devices/ad8534arz/op-amp-3mhz-40-to-85deg-c-nsoic/dp/4019797"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 6,897 lei"
 			(at 66.04 99.06 0)
 			(effects
 				(font
@@ -21000,6 +21792,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 116.84 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 0,121 lei"
 			(at 116.84 93.98 0)
 			(effects
 				(font
@@ -21168,6 +21969,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 309.88 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" " 5,203 lei"
 			(at 309.88 120.65 90)
 			(effects
 				(font
@@ -21347,6 +22157,15 @@
 				(hide yes)
 			)
 		)
+		(property "Price" " 5,203 lei"
+			(at 134.62 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9e3e6331-4bcf-4a9f-b535-0ae9904ec482")
 		)
@@ -21456,6 +22275,15 @@
 			)
 		)
 		(property "Purchase-URL" ""
+			(at 133.35 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0,3509 lei"
 			(at 133.35 104.14 90)
 			(effects
 				(font
