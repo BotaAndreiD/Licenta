@@ -1,0 +1,234 @@
+<svg viewBox="0 148 880 1292" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Segoe UI', Arial, Helvetica, sans-serif" role="img">
+  <title>Diagrama de Flux — Interfata ECG Monitor</title>
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="ah-g" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#1A6B30"/>
+    </marker>
+    <marker id="ah-r" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#B71C1C"/>
+    </marker>
+    <marker id="ah-p" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#5B1BA6"/>
+    </marker>
+    <marker id="ah-b" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#1255A6"/>
+    </marker>
+    <marker id="ah-o" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#C05000"/>
+    </marker>
+  </defs>
+
+  <!-- BLE Banner -->
+  <rect x="16" y="154" width="848" height="20" rx="4" fill="#1255A6"/>
+  <text x="440" y="168" text-anchor="middle" font-size="10" font-weight="bold" fill="white">FAZA 1 — CONECTARE BLE (BleConnectionService)</text>
+  <line x1="400" y1="174" x2="400" y2="186" stroke="#1255A6" stroke-width="1.5" marker-end="url(#ah-b)"/>
+
+  <!-- Scanare + Conectare BLE -->
+  <rect x="270" y="188" width="260" height="38" rx="7" fill="#EAF2FF" stroke="#1255A6" stroke-width="1.5"/>
+  <text x="400" y="212" text-anchor="middle" font-size="11" font-weight="bold" fill="#1255A6">Scanare si Conectare BLE</text>
+  <line x1="400" y1="226" x2="400" y2="242" stroke="#1255A6" stroke-width="1.5" marker-end="url(#ah-b)"/>
+
+  <!-- Diamond: Dispozitiv + Servicii OK? -->
+  <polygon points="400,244 506,272 400,300 294,272" fill="#D6E8FF" stroke="#1255A6" stroke-width="1.5"/>
+  <text x="400" y="267" text-anchor="middle" font-size="10" font-weight="bold" fill="#1255A6">Dispozitiv si servicii</text>
+  <text x="400" y="281" text-anchor="middle" font-size="10" font-weight="bold" fill="#1255A6">disponibile?</text>
+
+  <line x1="400" y1="300" x2="400" y2="314" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+  <text x="406" y="310" font-size="9" fill="#1A6B30" font-weight="bold">DA</text>
+
+  <line x1="506" y1="272" x2="600" y2="272" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="548" y="266" text-anchor="middle" font-size="9" fill="#B71C1C" font-weight="bold">NU</text>
+  <rect x="602" y="256" width="162" height="32" rx="7" fill="#FFEBEB" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="683" y="276" text-anchor="middle" font-size="10" fill="#B71C1C" font-weight="bold">Reincercare automata</text>
+  <line x1="764" y1="256" x2="764" y2="207" stroke="#B71C1C" stroke-width="1.5"/>
+  <line x1="764" y1="207" x2="530" y2="207" stroke="#B71C1C" stroke-width="1.5" marker-end="url(#ah-r)"/>
+
+  <!-- Activare notificari -->
+  <rect x="270" y="316" width="260" height="38" rx="7" fill="#EAF2FF" stroke="#1255A6" stroke-width="1.5"/>
+  <text x="400" y="340" text-anchor="middle" font-size="11" font-weight="bold" fill="#1255A6">Activare Notificari GATT (Notify)</text>
+  <line x1="400" y1="354" x2="400" y2="368" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+
+  <!-- CALIB Banner -->
+  <rect x="16" y="370" width="848" height="20" rx="4" fill="#1A6B30"/>
+  <text x="440" y="384" text-anchor="middle" font-size="10" font-weight="bold" fill="white">FAZA 2 — CALIBRARE (CalibrationWindow)</text>
+  <line x1="400" y1="390" x2="400" y2="402" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+
+  <!-- Pas 1 -->
+  <rect x="270" y="404" width="260" height="38" rx="7" fill="#EAFBEA" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="400" y="428" text-anchor="middle" font-size="11" font-weight="bold" fill="#1A6B30">Pas 1: Instructiuni atasare electrozi</text>
+  <line x1="400" y1="442" x2="400" y2="456" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+
+  <!-- Diamond: Utilizatorul continua? -->
+  <polygon points="400,458 506,486 400,514 294,486" fill="#C8F2C8" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="400" y="481" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A6B30">Utilizatorul</text>
+  <text x="400" y="495" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A6B30">continua?</text>
+
+  <line x1="400" y1="514" x2="400" y2="528" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+  <text x="406" y="524" font-size="9" fill="#1A6B30" font-weight="bold">DA</text>
+
+  <line x1="294" y1="486" x2="210" y2="486" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="252" y="480" text-anchor="middle" font-size="9" fill="#B71C1C" font-weight="bold">ANULARE</text>
+  <ellipse cx="138" cy="486" rx="58" ry="18" fill="#B71C1C"/>
+  <text x="138" y="491" text-anchor="middle" font-size="11" font-weight="bold" fill="white">SHUTDOWN</text>
+
+  <!-- Pas 2 verificare -->
+  <rect x="270" y="530" width="260" height="50" rx="7" fill="#EAFBEA" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="400" y="549" text-anchor="middle" font-size="11" font-weight="bold" fill="#1A6B30">Pas 2: Verificare automata semnal</text>
+  <text x="400" y="563" text-anchor="middle" font-size="9.5" fill="#555">Semnal ECG, amplitudine, sistem gata</text>
+  <text x="400" y="575" text-anchor="middle" font-size="9" fill="#888">(3 verificari secventiale x 900 ms)</text>
+  <line x1="400" y1="580" x2="400" y2="594" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+
+  <!-- Diamond: Calibrat? -->
+  <polygon points="400,596 506,624 400,652 294,624" fill="#C8F2C8" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="400" y="619" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A6B30">Calibrare</text>
+  <text x="400" y="633" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A6B30">reusita?</text>
+
+  <line x1="400" y1="652" x2="400" y2="666" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+  <text x="406" y="662" font-size="9" fill="#1A6B30" font-weight="bold">DA</text>
+
+  <line x1="294" y1="624" x2="200" y2="624" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="247" y="618" text-anchor="middle" font-size="9" fill="#B71C1C" font-weight="bold">NU</text>
+  <rect x="46" y="606" width="152" height="36" rx="7" fill="#FFEBEB" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="122" y="622" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Reincercare</text>
+  <text x="122" y="634" text-anchor="middle" font-size="9" fill="#B71C1C">Reatasati electrozii</text>
+  <line x1="46" y1="624" x2="26" y2="624" stroke="#B71C1C" stroke-width="1.5"/>
+  <line x1="26" y1="624" x2="26" y2="555" stroke="#B71C1C" stroke-width="1.5"/>
+  <line x1="26" y1="555" x2="270" y2="555" stroke="#B71C1C" stroke-width="1.5" marker-end="url(#ah-r)"/>
+
+  <!-- PATIENT Banner -->
+  <rect x="16" y="668" width="848" height="20" rx="4" fill="#B07D00"/>
+  <text x="440" y="682" text-anchor="middle" font-size="10" font-weight="bold" fill="white">FAZA 3 — DATE PACIENT (PatientDialog)</text>
+  <line x1="400" y1="688" x2="400" y2="700" stroke="#B07D00" stroke-width="1.5" marker-end="url(#ah-o)"/>
+
+  <!-- Date pacient -->
+  <rect x="270" y="702" width="260" height="38" rx="7" fill="#FFF8E8" stroke="#B07D00" stroke-width="1.5"/>
+  <text x="400" y="722" text-anchor="middle" font-size="11" font-weight="bold" fill="#B07D00">Introducere date pacient (optional)</text>
+  <text x="400" y="733" text-anchor="middle" font-size="9" fill="#888">Confirmare sau Skip</text>
+  <line x1="400" y1="740" x2="400" y2="754" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+
+  <!-- MAINWINDOW Banner -->
+  <rect x="16" y="756" width="848" height="20" rx="4" fill="#5B1BA6"/>
+  <text x="440" y="770" text-anchor="middle" font-size="10" font-weight="bold" fill="white">FAZA 4 — FEREASTRA PRINCIPALA (MainWindow) — MONITORIZARE LIVE</text>
+  <line x1="400" y1="776" x2="400" y2="788" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+
+  <!-- Init grafic + timere -->
+  <rect x="270" y="790" width="260" height="38" rx="7" fill="#F0EAFF" stroke="#5B1BA6" stroke-width="1.5"/>
+  <text x="400" y="810" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B1BA6">Initializare grafic + pornire timere</text>
+  <text x="400" y="822" text-anchor="middle" font-size="9" fill="#888">SetupPlot() + AttachLiveConnection()</text>
+  <line x1="400" y1="828" x2="400" y2="842" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+
+  <!-- LOOP dashed box -->
+  <rect x="60" y="846" width="510" height="250" rx="9" fill="none" stroke="#5B1BA6" stroke-width="1.8" stroke-dasharray="7,4"/>
+  <text x="315" y="862" text-anchor="middle" font-size="9.5" fill="#5B1BA6" font-style="italic">Bucla continua — Timer Tick (30 ms)</text>
+
+  <!-- Primire date ECG - parallelogram -->
+  <polygon points="282,872 552,872 532,906 262,906" fill="#E0D8FF" stroke="#5B1BA6" stroke-width="1.5"/>
+  <text x="407" y="893" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B1BA6">Primire date ECG via BLE Notify</text>
+  <line x1="407" y1="906" x2="407" y2="920" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+
+  <!-- Afisare semnal -->
+  <rect x="277" y="922" width="260" height="38" rx="6" fill="#F0EAFF" stroke="#5B1BA6" stroke-width="1.5"/>
+  <text x="407" y="946" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B1BA6">Afisare traseu ECG live (grafic glisant)</text>
+  <line x1="407" y1="960" x2="407" y2="974" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+
+  <!-- Analiza PQRST + parametri -->
+  <rect x="277" y="976" width="260" height="38" rx="6" fill="#F0EAFF" stroke="#5B1BA6" stroke-width="1.5"/>
+  <text x="407" y="996" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B1BA6">Analiza PQRST + Calcul parametri</text>
+  <text x="407" y="1008" text-anchor="middle" font-size="9" fill="#888">HR, HRV, PR, QRS, QTc, Amplitudine R</text>
+  <line x1="407" y1="1014" x2="407" y2="1028" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+
+  <!-- Clasificare ritm + calitate -->
+  <rect x="277" y="1030" width="260" height="38" rx="6" fill="#E0D8FF" stroke="#5B1BA6" stroke-width="1.5"/>
+  <text x="407" y="1050" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B1BA6">Clasificare ritm + Calitate semnal</text>
+  <text x="407" y="1062" text-anchor="middle" font-size="9" fill="#888">Normal / Tahicardie / Bradicardie / Neregulat</text>
+
+  <!-- Loop back arrow -->
+  <line x1="277" y1="1049" x2="88" y2="1049" stroke="#5B1BA6" stroke-width="1.5"/>
+  <line x1="88" y1="1049" x2="88" y2="891" stroke="#5B1BA6" stroke-width="1.5"/>
+  <line x1="88" y1="891" x2="262" y2="891" stroke="#5B1BA6" stroke-width="1.5" marker-end="url(#ah-p)"/>
+  <text x="66" y="978" font-size="8.5" fill="#5B1BA6" transform="rotate(-90 66 978)">BUCLA CONTINUA</text>
+
+  <!-- Connection to parallel section -->
+  <line x1="407" y1="1096" x2="407" y2="1126" stroke="#555" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <line x1="407" y1="1128" x2="220" y2="1128" stroke="#555" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <line x1="407" y1="1128" x2="660" y2="1128" stroke="#555" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <line x1="220" y1="1128" x2="220" y2="1148" stroke="#555" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#ah)"/>
+  <line x1="660" y1="1128" x2="660" y2="1148" stroke="#555" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#ah)"/>
+
+  <!-- Parallel section banner -->
+  <rect x="16" y="1106" width="848" height="20" rx="4" fill="#444"/>
+  <text x="440" y="1120" text-anchor="middle" font-size="10" font-weight="bold" fill="white">MONITORIZARE CONTINUA IN FUNDAL</text>
+
+  <!-- LEFT: BLE Reconnect panel - transparent background -->
+  <rect x="24" y="1130" width="416" height="302" rx="8" fill="none" stroke="#B71C1C" stroke-width="1.4"/>
+  <rect x="24" y="1130" width="416" height="20" rx="8" fill="#B71C1C"/>
+  <text x="232" y="1144" text-anchor="middle" font-size="9.5" font-weight="bold" fill="white">Monitorizare Conexiune BLE — Reconectare Automata</text>
+
+  <rect x="52" y="1160" width="360" height="32" rx="6" fill="#FFEBEB" stroke="#B71C1C" stroke-width="1.2"/>
+  <text x="232" y="1180" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Event: Device.ConnectionStatusChanged</text>
+  <line x1="232" y1="1192" x2="232" y2="1206" stroke="#B71C1C" stroke-width="1.5" marker-end="url(#ah-r)"/>
+
+  <polygon points="232,1208 322,1232 232,1256 142,1232" fill="#FFCDD2" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="232" y="1228" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">BLE</text>
+  <text x="232" y="1242" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">deconectat?</text>
+
+  <line x1="232" y1="1256" x2="232" y2="1270" stroke="#B71C1C" stroke-width="1.5" marker-end="url(#ah-r)"/>
+  <text x="238" y="1266" font-size="9" fill="#B71C1C" font-weight="bold">DA</text>
+  <line x1="142" y1="1232" x2="60" y2="1232" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="101" y="1226" text-anchor="middle" font-size="9" fill="#1A6B30" font-weight="bold">NU — continua</text>
+
+  <rect x="112" y="1272" width="240" height="32" rx="6" fill="#FFEBEB" stroke="#B71C1C" stroke-width="1.2"/>
+  <text x="232" y="1292" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Overlay deconectare + ReconnectLoop()</text>
+  <line x1="232" y1="1304" x2="232" y2="1318" stroke="#B71C1C" stroke-width="1.5"/>
+
+  <polygon points="232,1320 322,1344 232,1368 142,1344" fill="#FFCDD2" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="232" y="1339" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Reconectat?</text>
+
+  <line x1="322" y1="1344" x2="392" y2="1344" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="355" y="1338" text-anchor="middle" font-size="9" fill="#B71C1C" font-weight="bold">NU</text>
+  <text x="398" y="1344" font-size="8.5" fill="#B71C1C">Delay 1s</text>
+  <line x1="392" y1="1344" x2="392" y2="1288" stroke="#B71C1C" stroke-width="1.5"/>
+  <line x1="392" y1="1288" x2="352" y2="1288" stroke="#B71C1C" stroke-width="1.5" marker-end="url(#ah-r)"/>
+
+  <line x1="232" y1="1368" x2="232" y2="1382" stroke="#1A6B30" stroke-width="1.5" marker-end="url(#ah-g)"/>
+  <text x="238" y="1378" font-size="9" fill="#1A6B30" font-weight="bold">DA</text>
+
+  <rect x="112" y="1384" width="240" height="34" rx="6" fill="#E8FFF0" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="232" y="1400" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A6B30">Recalibrare offset + Reluare sesiune</text>
+  <text x="232" y="1412" text-anchor="middle" font-size="8.5" fill="#555">Fara retur la calibrare sau date pacient</text>
+
+  <!-- RIGHT: Electrode Alert panel - transparent background -->
+  <rect x="456" y="1130" width="408" height="302" rx="8" fill="none" stroke="#C05000" stroke-width="1.4"/>
+  <rect x="456" y="1130" width="408" height="20" rx="8" fill="#C05000"/>
+  <text x="660" y="1144" text-anchor="middle" font-size="9.5" font-weight="bold" fill="white">Alerta Electrozi — Monitorizare Calitate Semnal</text>
+
+  <rect x="484" y="1160" width="352" height="32" rx="6" fill="#FFEEDB" stroke="#C05000" stroke-width="1.2"/>
+  <text x="660" y="1180" text-anchor="middle" font-size="10" font-weight="bold" fill="#C05000">ElectrodeTimer Tick — la fiecare 90 secunde</text>
+  <line x1="660" y1="1192" x2="660" y2="1206" stroke="#C05000" stroke-width="1.5" marker-end="url(#ah-o)"/>
+
+  <polygon points="660,1208 756,1232 660,1256 564,1232" fill="#FFD8B0" stroke="#C05000" stroke-width="1.5"/>
+  <text x="660" y="1228" text-anchor="middle" font-size="10" font-weight="bold" fill="#C05000">Semnal saturat</text>
+  <text x="660" y="1242" text-anchor="middle" font-size="10" font-weight="bold" fill="#C05000">(&gt; +/-165 mV)?</text>
+
+  <line x1="660" y1="1256" x2="660" y2="1270" stroke="#C05000" stroke-width="1.5" marker-end="url(#ah-o)"/>
+  <text x="666" y="1266" font-size="9" fill="#C05000" font-weight="bold">DA</text>
+  <line x1="564" y1="1232" x2="476" y2="1232" stroke="#1A6B30" stroke-width="1.5"/>
+  <text x="520" y="1226" text-anchor="middle" font-size="9" fill="#1A6B30" font-weight="bold">NU — contact bun</text>
+
+  <rect x="540" y="1272" width="240" height="32" rx="6" fill="#FFEEDB" stroke="#C05000" stroke-width="1.4"/>
+  <text x="660" y="1288" text-anchor="middle" font-size="10" font-weight="bold" fill="#C05000">Alerta pop-up: Contact Electrod Deficitar</text>
+  <text x="660" y="1300" text-anchor="middle" font-size="8.5" fill="#666">Reatasati electrozii corect</text>
+  <line x1="660" y1="1304" x2="660" y2="1318" stroke="#C05000" stroke-width="1.5" marker-end="url(#ah-o)"/>
+
+  <rect x="540" y="1320" width="240" height="32" rx="6" fill="#FFEEDB" stroke="#C05000" stroke-width="1.2"/>
+  <text x="660" y="1340" text-anchor="middle" font-size="10" font-weight="bold" fill="#C05000">Utilizatorul confirma — OK</text>
+  <line x1="660" y1="1352" x2="660" y2="1372" stroke="#C05000" stroke-width="1.4"/>
+
+  <rect x="484" y="1374" width="352" height="44" rx="6" fill="none" stroke="#C05000" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="660" y="1392" text-anchor="middle" font-size="9.5" fill="#C05000" font-weight="bold">Calitate semnal verificata la fiecare 30 ms</text>
+  <text x="660" y="1408" text-anchor="middle" font-size="9" fill="#666">Contact Bun / Slab / Prost / Fara Semnal</text>
+</svg>

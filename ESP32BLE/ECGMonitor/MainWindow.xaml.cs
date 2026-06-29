@@ -49,7 +49,6 @@ namespace ECGMonitor
         private int _stepPerTick = 4;
         private bool _isPlaying = true;
         private const double SaturationLimit = 165.0;
-        private const double MaxPlausiblePauseSeconds = 5.0;
 
         private string _patientName = "Necunoscut";
         private string _patientAge = "--";
@@ -72,8 +71,7 @@ namespace ECGMonitor
 
         private int _totalExtrasystoles = 0;
         private double _lastCountedExtrasystoleTime = -1.0;
-        private double _sessionMaxPauseMs = 0.0;
-        private double _lastProcessedPauseTime = -1.0;
+        private double _smoothedBpm = -1.0;
 
         private Queue<double> _hrTrend = new();
         private const int HRTrendMaxPoints = 60;
@@ -527,13 +525,6 @@ namespace ECGMonitor
             _plotModel.InvalidatePlot(true);
         }
 
-        private static double Median(List<double> values)
-        {
-            var sorted = values.OrderBy(v => v).ToList();
-            int mid = sorted.Count / 2;
-            return sorted.Count % 2 == 0 ? (sorted[mid - 1] + sorted[mid]) / 2.0 : sorted[mid];
-        }
-
         private void DetectPQRST()
         {
             var points = _ecgSeries.Points;
@@ -549,55 +540,25 @@ namespace ECGMonitor
             _rAmplitudes.Clear();
 
             var amps = points.Select(p => p.Y).ToList();
-            double minAmp = amps.Min(),
-                maxAmp = amps.Max(),
+            double minAmp = ECGDetector.Percentile(amps, 2),
+                maxAmp = ECGDetector.Percentile(amps, 98),
                 range = maxAmp - minAmp;
 
             double avgDt = (points[n - 1].X - points[0].X) / Math.Max(1, n - 1);
             if (avgDt <= 0)
                 return;
-            int OffsetSamples(double seconds) => Math.Max(1, (int)Math.Round(seconds / avgDt));
 
             // ── Pan-Tompkins preprocessing — detecție R robustă la zgomot ──────────
             // Derivată → pătrat → integrare pe fereastră mobilă formează un envelope
             // unde vârfurile QRS ies în evidență indiferent de amplitudinea absolută.
-            var envelope = PanTompkinsEnvelope(amps, avgDt);
-            double envMedian = Median(envelope);
-            double envMad = Median(envelope.Select(v => Math.Abs(v - envMedian)).ToList());
-            double envSigma = envMad * 1.4826;
-            double envThreshold = Math.Max(
-                envMedian + envSigma * 3.0,
-                envMedian + (envelope.Max() - envMedian) * 0.25
+            var envelope = ECGDetector.PanTompkinsEnvelope(amps, avgDt);
+            List<int> rIndices = ECGDetector.DetectRIndicesAdaptive(
+                amps,
+                envelope,
+                avgDt,
+                minAmp,
+                range
             );
-
-            int minRRSamples = OffsetSamples(0.30);
-            int backprojectWin = OffsetSamples(0.060);
-
-            List<int> rIndices = new();
-            for (int i = 5; i < n - 5; i++)
-            {
-                if (
-                    envelope[i] > envThreshold
-                    && envelope[i] > envelope[i - 1]
-                    && envelope[i] > envelope[i - 2]
-                    && envelope[i] > envelope[i + 1]
-                    && envelope[i] > envelope[i + 2]
-                )
-                {
-                    if (rIndices.Count == 0 || i - rIndices[^1] > minRRSamples)
-                    {
-                        // Backproiecție: maximul din semnalul original în ±60ms față de vârful din envelope
-                        int lo = Math.Max(0, i - backprojectWin);
-                        int hi = Math.Min(n - 1, i + backprojectWin);
-                        int actualR = lo;
-                        for (int j = lo + 1; j <= hi; j++)
-                            if (amps[j] > amps[actualR])
-                                actualR = j;
-                        if (amps[actualR] > minAmp + range * 0.25)
-                            rIndices.Add(actualR);
-                    }
-                }
-            }
 
             List<double> pTimes = new(),
                 qTimes = new(),
@@ -606,124 +567,42 @@ namespace ECGMonitor
             var stDeviations = new List<double>();
             var rTimesList = rIndices.Select(i => points[i].X).ToList();
 
-            for (int beatIdx = 0; beatIdx < rIndices.Count; beatIdx++)
+            var beatWaves = ECGDetector.DetectWaveBoundaries(amps, rIndices, avgDt, minAmp, range);
+            foreach (var beat in beatWaves)
             {
-                int ri = rIndices[beatIdx];
-                _rPeaks.Points.Add(new ScatterPoint(points[ri].X, points[ri].Y));
-                _rAmplitudes.Add(points[ri].Y);
+                _rPeaks.Points.Add(new ScatterPoint(points[beat.RIndex].X, points[beat.RIndex].Y));
+                _rAmplitudes.Add(points[beat.RIndex].Y);
 
-                // ── Ferestre adaptive proporționale cu RR-ul local ─────────────────
-                // Rezolvă problema că la bradicardie/tahicardie undele sunt mai depărtate
-                // sau mai apropiate decât presupun ferestrele fixe.
-                double localRR;
-                if (beatIdx > 0 && beatIdx < rIndices.Count - 1)
-                    localRR = (rTimesList[beatIdx + 1] - rTimesList[beatIdx - 1]) / 2.0;
-                else if (beatIdx > 0)
-                    localRR = rTimesList[beatIdx] - rTimesList[beatIdx - 1];
-                else if (beatIdx < rIndices.Count - 1)
-                    localRR = rTimesList[beatIdx + 1] - rTimesList[beatIdx];
-                else
-                    localRR = 0.80;
-                localRR = Math.Clamp(localRR, 0.33, 2.0);
-
-                int qWinStart = OffsetSamples(Math.Min(localRR * 0.15, 0.117));
-                int qWinEnd = OffsetSamples(0.015);
-                int sWinStart = OffsetSamples(0.015);
-                int sWinEnd = OffsetSamples(Math.Min(localRR * 0.15, 0.117));
-                int pWinStart = OffsetSamples(Math.Min(localRR * 0.70, 0.450));
-                int pWinEnd = OffsetSamples(Math.Max(localRR * 0.25, 0.100));
-                int tWinStart = OffsetSamples(0.140);
-                int tWinEnd = OffsetSamples(Math.Min(localRR * 0.60, 0.500));
-
-                // ── Q ──────────────────────────────────────────────────────────────
-                int qStart = Math.Max(0, ri - qWinStart);
-                int qEnd = Math.Max(0, ri - qWinEnd);
-                int qIdx = qStart;
-                bool qFound = false;
-                if (qStart < qEnd)
+                if (beat.QIndex.HasValue)
                 {
-                    for (int j = qStart; j <= qEnd; j++)
-                        if (amps[j] < amps[qIdx])
-                            qIdx = j;
+                    int qIdx = beat.QIndex.Value;
                     _qPoints.Points.Add(new ScatterPoint(points[qIdx].X, points[qIdx].Y));
                     qTimes.Add(points[qIdx].X);
-                    qFound = true;
                 }
 
-                // ── S ──────────────────────────────────────────────────────────────
-                int sStart = Math.Min(n - 1, ri + sWinStart);
-                int sEnd = Math.Min(n - 1, ri + sWinEnd);
-                int sIdx = sStart;
-                bool sFound = false;
-                if (sStart < sEnd)
+                if (beat.SIndex.HasValue)
                 {
-                    for (int j = sStart; j <= sEnd; j++)
-                        if (amps[j] < amps[sIdx])
-                            sIdx = j;
+                    int sIdx = beat.SIndex.Value;
                     _sPoints.Points.Add(new ScatterPoint(points[sIdx].X, points[sIdx].Y));
                     sTimes.Add(points[sIdx].X);
-                    sFound = true;
                 }
 
-                // ── P ──────────────────────────────────────────────────────────────
-                int pStart = Math.Max(0, ri - pWinStart);
-                int pEnd = Math.Max(0, ri - pWinEnd);
-                bool pFound = false;
-                int pIdx = pStart;
-                if (pStart < pEnd)
+                if (beat.PIndex.HasValue)
                 {
-                    for (int j = pStart; j <= pEnd; j++)
-                        if (amps[j] > amps[pIdx])
-                            pIdx = j;
-                    if (amps[pIdx] > minAmp + range * 0.05)
-                    {
-                        _pPeaks.Points.Add(new ScatterPoint(points[pIdx].X, points[pIdx].Y));
-                        pTimes.Add(points[pIdx].X);
-                        pFound = true;
-                    }
+                    int pIdx = beat.PIndex.Value;
+                    _pPeaks.Points.Add(new ScatterPoint(points[pIdx].X, points[pIdx].Y));
+                    pTimes.Add(points[pIdx].X);
                 }
 
-                // ── T ──────────────────────────────────────────────────────────────
-                int tStart = Math.Min(n - 1, ri + tWinStart);
-                int tEnd = Math.Min(n - 1, ri + tWinEnd);
-                if (tStart < tEnd)
+                if (beat.TIndex.HasValue)
                 {
-                    int tIdx = tStart;
-                    for (int j = tStart; j <= tEnd; j++)
-                        if (amps[j] > amps[tIdx])
-                            tIdx = j;
-                    if (amps[tIdx] > minAmp + range * 0.05)
-                    {
-                        _tPeaks.Points.Add(new ScatterPoint(points[tIdx].X, points[tIdx].Y));
-                        tTimes.Add(points[tIdx].X);
-                    }
+                    int tIdx = beat.TIndex.Value;
+                    _tPeaks.Points.Add(new ScatterPoint(points[tIdx].X, points[tIdx].Y));
+                    tTimes.Add(points[tIdx].X);
                 }
 
-                // ── Segment ST: deviația J-point față de baseline PR ───────────────
-                // J-point = ~60ms după S; baseline = media segmentului PR
-                if (sFound && qFound)
-                {
-                    int jOffset = OffsetSamples(0.060);
-                    int jIdx = Math.Min(n - 1, sIdx + jOffset);
-                    double jAmp = amps[jIdx];
-
-                    double baseline;
-                    if (pFound && pIdx < qIdx)
-                    {
-                        int prLen = qIdx - pIdx;
-                        baseline =
-                            prLen > 2
-                                ? Enumerable.Range(pIdx, prLen).Select(k => amps[k]).Average()
-                                : (amps[pIdx] + amps[qIdx]) / 2.0;
-                    }
-                    else
-                    {
-                        int isoIdx = Math.Max(0, qIdx - OffsetSamples(0.040));
-                        baseline = amps[isoIdx];
-                    }
-
-                    stDeviations.Add(jAmp - baseline);
-                }
+                if (beat.StDeviation.HasValue)
+                    stDeviations.Add(beat.StDeviation.Value);
             }
 
             if (rIndices.Count >= 2)
@@ -737,6 +616,11 @@ namespace ECGMonitor
 
                 if (bpm > 30 && bpm < 220)
                 {
+                    // Netezire exponențială — fără ea, o singură bătaie ratată/recuperată
+                    // între două ferestre face ca BPM-ul afișat să sară brusc (ex. 110→58).
+                    _smoothedBpm = _smoothedBpm < 0 ? bpm : _smoothedBpm * 0.7 + bpm * 0.3;
+                    bpm = _smoothedBpm;
+
                     HRValue.Text = ((int)bpm).ToString();
                     try
                     {
@@ -829,27 +713,14 @@ namespace ECGMonitor
                                 : new SolidColorBrush(WpfColor.FromRgb(63, 185, 80));
                     }
 
-                    // Total cumulativ pe toată sesiunea — aceeași bătaie nu se numără de două ori
-                    for (int i = 0; i < _rrIntervals.Count; i++)
+                    // Total cumulativ pe toată sesiunea — aceeași bătaie nu se numără de două ori.
+                    foreach (int idx in ECGDetector.DetectExtrasystoleIndices(rIndices, amps))
                     {
-                        double beatTime = rTimesList[i + 1];
-                        if (
-                            _rrIntervals[i] < avgRR * 0.80
-                            && beatTime > _lastCountedExtrasystoleTime
-                        )
+                        double beatTime = points[idx].X;
+                        if (beatTime > _lastCountedExtrasystoleTime)
                         {
                             _totalExtrasystoles++;
                             _lastCountedExtrasystoleTime = beatTime;
-                        }
-                        if (beatTime > _lastProcessedPauseTime)
-                        {
-                            // RR-uri peste 5s nu sunt fiziologic plauzibile ca pauză cardiacă reală
-                            if (_rrIntervals[i] <= MaxPlausiblePauseSeconds)
-                                _sessionMaxPauseMs = Math.Max(
-                                    _sessionMaxPauseMs,
-                                    _rrIntervals[i] * 1000.0
-                                );
-                            _lastProcessedPauseTime = beatTime;
                         }
                     }
                     ExtrasistoleValue.Text = _totalExtrasystoles.ToString();
@@ -857,14 +728,6 @@ namespace ECGMonitor
                         _totalExtrasystoles > 0
                             ? new SolidColorBrush(WpfColor.FromRgb(255, 107, 107))
                             : new SolidColorBrush(WpfColor.FromRgb(210, 168, 255));
-
-                    MaxPauseValue.Text = ((int)_sessionMaxPauseMs).ToString();
-                    MaxPauseStatus.Text =
-                        _sessionMaxPauseMs > 1500 ? "Atenție — pauză prelungită" : "Normal";
-                    MaxPauseStatus.Foreground =
-                        _sessionMaxPauseMs > 1500
-                            ? new SolidColorBrush(WpfColor.FromRgb(255, 107, 107))
-                            : new SolidColorBrush(WpfColor.FromRgb(63, 185, 80));
 
                     if (pTimes.Count > 0 && qTimes.Count > 0)
                     {
@@ -947,41 +810,6 @@ namespace ECGMonitor
                     }
                 }
             }
-        }
-
-        // Pan-Tompkins preprocessing (1985) — preprocesare standard pentru detecție R robustă.
-        // Derivată în 5 puncte → pătrat → integrare pe fereastră mobilă (150ms).
-        // Rezultatul e un envelope pozitiv cu vârfuri clare la complexele QRS,
-        // independent de amplitudinea absolută a semnalului.
-        private static List<double> PanTompkinsEnvelope(List<double> signal, double avgDt)
-        {
-            int n = signal.Count;
-
-            // 1. Derivată în 5 puncte — accentuează pantele abrupte QRS
-            var deriv = new double[n];
-            for (int i = 2; i < n - 2; i++)
-                deriv[i] =
-                    (signal[i + 2] + 2 * signal[i + 1] - 2 * signal[i - 1] - signal[i - 2]) / 8.0;
-
-            // 2. Ridicare la pătrat — toate valorile pozitive, vârfurile mari domină
-            var squared = new double[n];
-            for (int i = 0; i < n; i++)
-                squared[i] = deriv[i] * deriv[i];
-
-            // 3. Integrare pe fereastră mobilă ~150ms — netezire, formează envelope
-            int winSize = Math.Max(2, (int)Math.Round(0.150 / avgDt));
-            var result = new List<double>(n);
-            double runSum = 0;
-            var winQueue = new Queue<double>(winSize + 1);
-            for (int i = 0; i < n; i++)
-            {
-                runSum += squared[i];
-                winQueue.Enqueue(squared[i]);
-                if (winQueue.Count > winSize)
-                    runSum -= winQueue.Dequeue();
-                result.Add(runSum / winQueue.Count);
-            }
-            return result;
         }
 
         private void SetRitm(string text, WpfColor textColor, string subtext, WpfColor bgColor)
@@ -1140,38 +968,45 @@ namespace ECGMonitor
             Canvas.SetTop(dot, lastY - 3);
             HRTrendCanvas.Children.Add(dot);
 
-            var maxLbl = new TextBlock
+            // Etichetă cu fundal opac — fără el, linia roșie a trendului trece chiar
+            // pe sub text și îl face ilizibil exact când valoarea atinge minimul/maximul.
+            Border MakeLabelChip(string text, WpfColor color, bool bold = false)
             {
-                Text = $"{(int)maxVal}",
-                Foreground = new SolidColorBrush(WpfColor.FromArgb(150, 139, 148, 158)),
-                FontSize = 9,
-                FontFamily = new FontFamily("Segoe UI"),
-            };
+                return new Border
+                {
+                    Background = new SolidColorBrush(WpfColor.FromArgb(210, 13, 17, 23)),
+                    CornerRadius = new CornerRadius(2),
+                    Padding = new Thickness(2, 0, 2, 0),
+                    Child = new TextBlock
+                    {
+                        Text = text,
+                        Foreground = new SolidColorBrush(color),
+                        FontSize = 9,
+                        FontWeight = bold
+                            ? System.Windows.FontWeights.SemiBold
+                            : System.Windows.FontWeights.Normal,
+                        FontFamily = new FontFamily("Segoe UI"),
+                    },
+                };
+            }
+
+            var maxLbl = MakeLabelChip($"{(int)maxVal}", WpfColor.FromRgb(139, 148, 158));
             Canvas.SetLeft(maxLbl, 2);
             Canvas.SetTop(maxLbl, 0);
             HRTrendCanvas.Children.Add(maxLbl);
 
-            var minLbl = new TextBlock
-            {
-                Text = $"{(int)minVal}",
-                Foreground = new SolidColorBrush(WpfColor.FromArgb(150, 139, 148, 158)),
-                FontSize = 9,
-                FontFamily = new FontFamily("Segoe UI"),
-            };
+            var minLbl = MakeLabelChip($"{(int)minVal}", WpfColor.FromRgb(139, 148, 158));
             Canvas.SetLeft(minLbl, 2);
             Canvas.SetTop(minLbl, canvasHeight - 12);
             HRTrendCanvas.Children.Add(minLbl);
 
-            var curLbl = new TextBlock
-            {
-                Text = $"{(int)values[^1]}",
-                Foreground = new SolidColorBrush(WpfColor.FromRgb(255, 107, 107)),
-                FontSize = 9,
-                FontWeight = System.Windows.FontWeights.SemiBold,
-                FontFamily = new FontFamily("Segoe UI"),
-            };
-            Canvas.SetLeft(curLbl, canvasWidth - 24);
-            Canvas.SetTop(curLbl, canvasHeight / 2 - 6);
+            var curLbl = MakeLabelChip(
+                $"{(int)values[^1]}",
+                WpfColor.FromRgb(255, 107, 107),
+                bold: true
+            );
+            Canvas.SetLeft(curLbl, canvasWidth - 28);
+            Canvas.SetTop(curLbl, canvasHeight / 2 - 7);
             HRTrendCanvas.Children.Add(curLbl);
         }
 

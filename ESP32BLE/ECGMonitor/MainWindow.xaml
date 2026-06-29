@@ -52,7 +52,11 @@
         </Setter.Value>
       </Setter>
     </Style>
-    <Style x:Key="CaptionCloseBtnStyle" TargetType="Button" BasedOn="{StaticResource CaptionBtnStyle}">
+    <Style
+      x:Key="CaptionCloseBtnStyle"
+      TargetType="Button"
+      BasedOn="{StaticResource CaptionBtnStyle}"
+    >
       <Style.Triggers>
         <Trigger Property="IsMouseOver" Value="True">
           <Setter Property="Background" Value="#E81123" />
@@ -203,7 +207,11 @@
             Style="{StaticResource CaptionBtnStyle}"
             Click="MaximizeBtn_Click"
           />
-          <Button Content="✕" Style="{StaticResource CaptionCloseBtnStyle}" Click="CloseBtn_Click" />
+          <Button
+            Content="✕"
+            Style="{StaticResource CaptionCloseBtnStyle}"
+            Click="CloseBtn_Click"
+          />
         </StackPanel>
       </Grid>
     </Border>
@@ -647,37 +655,6 @@
           </StackPanel>
         </Border>
 
-        <!-- Pauza R-R maxima pe toata sesiunea -->
-        <Border Style="{StaticResource CardStyle}" Margin="0,0,0,10">
-          <StackPanel>
-            <TextBlock Text="PAUZĂ MAXIMĂ" Style="{StaticResource LabelStyle}" Margin="0,0,0,6" />
-            <StackPanel Orientation="Horizontal">
-              <TextBlock
-                x:Name="MaxPauseValue"
-                Text="--"
-                Style="{StaticResource ValueMedStyle}"
-                Foreground="#79C0FF"
-              />
-              <TextBlock
-                Text=" ms"
-                Foreground="#8B949E"
-                FontSize="13"
-                FontFamily="Segoe UI"
-                VerticalAlignment="Bottom"
-                Margin="4,0,0,4"
-              />
-            </StackPanel>
-            <TextBlock
-              x:Name="MaxPauseStatus"
-              Text="--"
-              Foreground="#8B949E"
-              FontSize="11"
-              FontFamily="Segoe UI"
-              Margin="0,4,0,0"
-            />
-          </StackPanel>
-        </Border>
-
         <!-- Segment ST -->
         <Border Style="{StaticResource CardStyle}" Margin="0,0,0,10">
           <StackPanel>
@@ -703,7 +680,13 @@
       </StackPanel>
     </Viewbox>
     <!-- BOTTOM TOOLBAR - latimea graficului, se opreste la marginea panoului lateral -->
-    <Border Grid.Row="2" Grid.Column="0" Background="#161B22" BorderBrush="#21262D" BorderThickness="0,1,0,0">
+    <Border
+      Grid.Row="2"
+      Grid.Column="0"
+      Background="#161B22"
+      BorderBrush="#21262D"
+      BorderThickness="0,1,0,0"
+    >
       <Grid Margin="20,0">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
