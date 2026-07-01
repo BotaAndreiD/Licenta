@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "y35sx6G5iE4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor.Validation\\ECGMonitor.Validation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrei\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\questpdf\\2024.3.4\\questpdf.2024.3.4.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}
