@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Dcs0Q1Jeius=",
   "success": true,
   "projectFilePath": "C:\\Users\\botaa\\Desktop\\Licenta\\ESP32BLE+InterfataDigitala\\ECGMonitor\\ECGMonitor.csproj",
@@ -9,6 +10,17 @@
     "C:\\Users\\botaa\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
     "C:\\Users\\botaa\\.nuget\\packages\\questpdf\\2024.3.4\\questpdf.2024.3.4.nupkg.sha512",
     "C:\\Users\\botaa\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+=======
+  "dgSpecHash": "+dodWtwq6xA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrei\\Desktop\\Licenta\\ESP32BLE\\ECGMonitor\\ECGMonitor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrei\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\questpdf\\2024.3.4\\questpdf.2024.3.4.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
   ],
   "logs": []
 }

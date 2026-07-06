@@ -714,6 +714,7 @@ namespace ECGMonitor
                     }
 
                     // Total cumulativ pe toată sesiunea — aceeași bătaie nu se numără de două ori.
+<<<<<<< HEAD
                     foreach (
                         int idx in ECGDetector.DetectExtrasystoleIndices(
                             rIndices,
@@ -722,6 +723,9 @@ namespace ECGMonitor
                             avgDt
                         )
                     )
+=======
+                    foreach (int idx in ECGDetector.DetectExtrasystoleIndices(rIndices, amps))
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
                     {
                         double beatTime = points[idx].X;
                         if (beatTime > _lastCountedExtrasystoleTime)

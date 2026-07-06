@@ -1,6 +1,10 @@
 LTspice 26.0.2 for Windows
 Circuit: C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\Toleranta NOTCH.net
+<<<<<<< HEAD
 Start Time: Wed Jul  1 13:13:09 2026
+=======
+Start Time: Wed Jul  1 17:33:49 2026
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
 
 .step run=1
 solver = Normal
@@ -318,7 +322,11 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
+<<<<<<< HEAD
 Total elapsed time: 23.642 seconds.
+=======
+Total elapsed time: 26.073 seconds.
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
 
 Files loaded:
 C:\Users\botaa\Documents\Licenta\Licenta\SimulariLtspice\Tolerante\Toleranta NOTCH.net

@@ -35,6 +35,7 @@ namespace ECGMonitor.Validation
 
         public static bool IsPrematureCode(int code) => PrematureCodes.Contains(code);
 
+<<<<<<< HEAD
         // Subset ventricular: a=ABERR(4), V=PVC(5), F=FUSION(6) — origine în miocardul
         // ventricular (sau conducere aberantă), deci QRS tipic lărgit. J/A/S (7,8,9) sunt
         // supraventriculare (nodale/atriale), cu QRS de obicei îngust — semnalul de
@@ -52,6 +53,8 @@ namespace ECGMonitor.Validation
         public static bool IsSupraventricularPrematureCode(int code) =>
             SupraventricularPrematureCodes.Contains(code);
 
+=======
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
         public static async Task<WfdbRecord> LoadAsync(string recordName, string cacheDir)
         {
             string heaPath = await WfdbCore.EnsureDownloadedAsync(BaseUrl, recordName, "hea", cacheDir);

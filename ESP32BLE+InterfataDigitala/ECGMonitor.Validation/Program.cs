@@ -54,20 +54,26 @@ if (!skipMitbih)
 
     var rows = new List<RecordResult>();
     var ectopicRows = new List<RecordResult>();
+<<<<<<< HEAD
     var vebRows = new List<RecordResult>();
     var svpRows = new List<RecordResult>();
+=======
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
     long totalTP = 0,
         totalFN = 0,
         totalFP = 0;
     long ectTotalTP = 0,
         ectTotalFN = 0,
         ectTotalFP = 0;
+<<<<<<< HEAD
     long vebTotalTP = 0,
         vebTotalFN = 0,
         vebTotalFP = 0;
     long svpTotalTP = 0,
         svpTotalFN = 0,
         svpTotalFP = 0;
+=======
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
 
     foreach (string rec in records)
     {
@@ -119,14 +125,20 @@ if (!skipMitbih)
             $"bătăi reale={truth.Count,5} detectate={detected.Count,5} TP={tp,5} FN={fn,4} FP={fp,4}  Se={se,6:F2}%  +P={pp,6:F2}%"
         );
 
+<<<<<<< HEAD
         // ── Extrasistole: comparăm bătăile semnalate de euristica aplicației (vezi cele
         // trei căi în ECGDetector.DetectExtrasystoleIndices) cu bătăile ectopice/premature
         // adnotate de cardiologi ──────────────────────────────────────────────────────
+=======
+        // ── Extrasistole: comparăm bătăile semnalate de euristica aplicației (premature
+        // + pauză compensatorie) cu bătăile ectopice/premature adnotate de cardiologi ──
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
         List<int> ectTruth = wf
             .Annotations.Where(a => WfdbReader.IsPrematureCode(a.Code))
             .Select(a => a.Sample)
             .OrderBy(s => s)
             .ToList();
+<<<<<<< HEAD
         var ectBeatWaves = ECGDetector.DetectWaveBoundaries(amps, detected, avgDt, minAmp, range);
         List<int> ectDetected = ECGDetector.DetectExtrasystoleIndices(
             detected,
@@ -134,6 +146,9 @@ if (!skipMitbih)
             ectBeatWaves,
             avgDt
         );
+=======
+        List<int> ectDetected = ECGDetector.DetectExtrasystoleIndices(detected, amps);
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
         var (ectTp, ectFn, ectFp) = MatchBeats(ectTruth, ectDetected, toleranceSamples);
         double ectSe = ectTp + ectFn > 0 ? 100.0 * ectTp / (ectTp + ectFn) : 0;
         double ectPp = ectTp + ectFp > 0 ? 100.0 * ectTp / (ectTp + ectFp) : 0;
@@ -152,6 +167,7 @@ if (!skipMitbih)
         ectTotalTP += ectTp;
         ectTotalFN += ectFn;
         ectTotalFP += ectFp;
+<<<<<<< HEAD
 
         // ── Subset ventricular (V/aberant/fuziune, cod 4/5/6) — origine ventriculară,
         // deci QRS lat, exact ce detectorul poate recunoaște prin lățime. Bătăile
@@ -190,6 +206,8 @@ if (!skipMitbih)
         svpTotalTP += svpTp;
         svpTotalFN += svpFn;
         svpTotalFP += svpFp;
+=======
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
     }
 
     double totalSe = totalTP + totalFN > 0 ? 100.0 * totalTP / (totalTP + totalFN) : 0;
@@ -241,6 +259,7 @@ if (!skipMitbih)
             "Validare detecție extrasistole (bătăi premature/ectopice) — MIT-BIH Arrhythmia Database"
     );
 
+<<<<<<< HEAD
     double vebTotalSe =
         vebTotalTP + vebTotalFN > 0 ? 100.0 * vebTotalTP / (vebTotalTP + vebTotalFN) : 0;
     double vebTotalPp =
@@ -304,6 +323,8 @@ if (!skipMitbih)
             + "ventriculare (V/aberant/fuziune, cod 4/5/6) apare aici drept FP."
     );
 
+=======
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
     Console.WriteLine();
     Console.WriteLine($"Rezultate MIT-BIH scrise în: {Path.GetFullPath(resultsDir)}");
 }

@@ -11,7 +11,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ECGMonitor
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\botaa\Desktop\Licenta\ESP32BLE+InterfataDigitala\ECGMonitor\
+=======
+build_property.ProjectDir = C:\Users\Andrei\Desktop\Licenta\ESP32BLE\ECGMonitor\
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true

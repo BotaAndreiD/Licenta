@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECGMonitor.Validation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b084d6a1e4a0e3d427e00f54e7cd150bd04e097")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4b53cc253e84b83e1882fef5d54a53f4ced7597")]
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
 [assembly: System.Reflection.AssemblyProductAttribute("ECGMonitor.Validation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECGMonitor.Validation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

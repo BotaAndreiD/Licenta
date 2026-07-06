@@ -159,6 +159,7 @@ namespace ECGMonitor
             return result;
         }
 
+<<<<<<< HEAD
         // Extrasistolă = bătaie ectopică identificată pe una din trei căi independente:
         //
         //  A. premature && (pauză compensatorie SAU amplitudine R anormală) — calea
@@ -217,6 +218,25 @@ namespace ECGMonitor
             List<BeatWaves>? beatWaves = null,
             double avgDt = 0
         )
+=======
+        // Extrasistolă = bătaie prematură (RR scurt) confirmată fie de o pauză
+        // compensatorie (RR următor anormal de lung), fie de o amplitudine R diferită
+        // de cea tipică a pacientului (bătăile ectopice au de obicei o formă/amplitudine
+        // diferită). Un RR scurt izolat NU e suficient — variabilitatea sinusală normală
+        // (respirație) produce constant asemenea RR-uri la oameni sănătoși. Pauza
+        // compensatorie singură nu prinde seriile de extrasistole consecutive (RR-ul
+        // următor e tot scurt, nu o pauză) — de aceea amplitudinea e un al doilea semnal,
+        // independent de timing. Folosim mediana, nu media, ca reper, ca să nu fie trasă
+        // chiar de valorile extreme pe care le evaluăm.
+        //
+        // Notă: am testat și un al treilea semnal (template matching pe forma bătăii,
+        // prin corelație Pearson) — empiric a scăzut precizia chiar la praguri foarte
+        // strict calibrate, fiindcă un jitter de 1-2 eșantioane în poziția vârfului R
+        // (normal, din backproiecție) distruge corelația pe panta abruptă a QRS-ului,
+        // inclusiv pentru bătăi complet normale. Ar necesita aliniere sub-eșantion mult
+        // mai elaborată ca să funcționeze — nu a fost păstrat.
+        public static List<int> DetectExtrasystoleIndices(List<int> rIndices, List<double> amps)
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
         {
             var result = new List<int>();
             if (rIndices.Count < 3)
@@ -231,6 +251,7 @@ namespace ECGMonitor
             double medianAmp = Median(beatAmps);
             double amplMad = Median(beatAmps.Select(a => Math.Abs(a - medianAmp)).ToList());
 
+<<<<<<< HEAD
             // Lățimea QRS (S−Q) per bătaie — folosită mai jos în căile B și C (vezi
             // comentariul de deasupra metodei).
             List<double?>? widths = null;
@@ -258,12 +279,15 @@ namespace ECGMonitor
             // nivelul dinaintea căii C.
             bool cleanWidthSignal = baselineWidth > 0 && widthMad / baselineWidth < 0.05;
 
+=======
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
             for (int i = 0; i < rr.Count - 1; i++)
             {
                 bool premature = rr[i] < medianRR * 0.78;
                 bool compensatoryPause = rr[i + 1] > medianRR * 1.15;
                 bool amplitudeDeviates =
                     amplMad > 0 && Math.Abs(beatAmps[i + 1] - medianAmp) > amplMad * 5.0;
+<<<<<<< HEAD
                 bool wideQrs =
                     widths != null
                     && widths[i + 1].HasValue
@@ -283,6 +307,9 @@ namespace ECGMonitor
                     || (wideQrs && strongPause)
                     || ectopicByMorphologyAlone;
                 if (ectopic)
+=======
+                if (premature && (compensatoryPause || amplitudeDeviates))
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
                     result.Add(rIndices[i + 1]);
             }
             return result;
@@ -403,6 +430,7 @@ namespace ECGMonitor
                 if (peakVal > threshold1 && !inRefractory)
                 {
                     // Discriminare T-wave: vârf apropiat de R-ul anterior și mult mai mic
+<<<<<<< HEAD
                     // decât el e probabil T, nu un nou QRS. Pragul de 0.25 (nu 0.5, ca în
                     // Pan-Tompkins clasic) — la 0.5, multe extrasistole premature reale,
                     // cu amplitudine de envelope mai mică decât bătaia normală precedentă
@@ -416,6 +444,13 @@ namespace ECGMonitor
                         lastR >= 0
                         && i - lastR < tWaveWindowSamples
                         && peakVal < lastQrsPeakVal * 0.25;
+=======
+                    // decât el e probabil T, nu un nou QRS.
+                    bool looksLikeTWave =
+                        lastR >= 0
+                        && i - lastR < tWaveWindowSamples
+                        && peakVal < lastQrsPeakVal * 0.5;
+>>>>>>> 5e186706979e8c8f13ca0721319277697f33904e
 
                     if (!looksLikeTWave)
                     {
