@@ -1,0 +1,24 @@
+LTspice 26.0.1 for Windows
+Circuit: \\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Alimentare\TensiuneReferinta.net
+Start Time: Sun Mar 22 14:52:42 2026
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Instance "u1:m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m2": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m16": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m3": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m4": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:m15": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.280 seconds.
+
+Files loaded:
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Alimentare\TensiuneReferinta.net
+\\wsl.localhost\Ubuntu\home\andrei\Licenta\SimulariLtspice\Alimentare\ad8534.cir
+

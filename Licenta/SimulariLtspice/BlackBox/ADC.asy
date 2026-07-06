@@ -1,0 +1,7 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 128 48 -128 -48
+TEXT -38 -3 Left 5 ADC
+PIN -128 0 NONE 8
+PINATTR PinName INADC
+PINATTR SpiceOrder 1

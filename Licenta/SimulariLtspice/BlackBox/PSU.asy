@@ -1,0 +1,10 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -144 81 176 -64
+TEXT -27 5 Left 5 PSU
+PIN 176 -16 NONE 8
+PINATTR PinName Vcc
+PINATTR SpiceOrder 1
+PIN 176 32 NONE 8
+PINATTR PinName Vref
+PINATTR SpiceOrder 2

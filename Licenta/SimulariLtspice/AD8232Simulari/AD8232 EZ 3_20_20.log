@@ -1,0 +1,17 @@
+LTspice 24.1.10 for Windows
+Circuit: Z:\home\andrei\Downloads\5810.AD8232 EZ 3_20_20\AD8232 EZ 3_20_20.net
+Start Time: Mon Jan 12 11:32:48 2026
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+ERROR: Node u2:ppp is floating and connected to current source u2:I20
+
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 42.570 seconds.
+
+Files loaded:
+Z:\home\andrei\Downloads\5810.AD8232 EZ 3_20_20\AD8232 EZ 3_20_20.net
+Z:\home\andrei\Downloads\5810.AD8232 EZ 3_20_20\AD8232.cir
+

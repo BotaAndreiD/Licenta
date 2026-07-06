@@ -1,0 +1,15 @@
+Version 4
+SymbolType BLOCK
+LINE Normal 0 112 0 -112
+LINE Normal -144 0 0 112
+LINE Normal 0 -112 -144 0
+TEXT -102 -3 Left 5 RLD
+PIN -144 0 NONE 8
+PINATTR PinName RL
+PINATTR SpiceOrder 1
+PIN 0 48 NONE 8
+PINATTR PinName VREF
+PINATTR SpiceOrder 2
+PIN 0 -48 NONE 8
+PINATTR PinName VMED
+PINATTR SpiceOrder 3
